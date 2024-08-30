@@ -1,0 +1,1373 @@
+@charset "utf-8";
+
+/* Common */
+.contents{max-width:1180px; padding:0 10px; margin:0 auto;}
+.contents01{margin:30px 0; overflow:hidden;}
+.contents02{margin:0 20px;}
+.contents03{padding:0 10px;}
+.contents04{margin:40px 0 0}
+.contents05{margin:0 0 0}
+
+.location{display:none;}
+
+.con_ts{margin-bottom:30px; overflow:hidden;}
+
+.con_title{margin:0 10px 20px;}
+.con_title h2{background:url(../images/common/contents_bull.gif) no-repeat left 8px; padding-left:20px; font-size:24px; color:#202023; line-height:1.5em; /*height:24px;*/}
+.con_title p{margin-top:10px; font-size:15px; color:#202023;}
+.con_title02{margin:30px 0 0 0;}
+.con_title04{margin:30px 0 20px;}
+.con_title05{margin:30px 10px 20px;}
+
+.tab{width:100%; min-width:366px; margin-bottom:20px; text-align:center; }
+.tab li{display:inline-block; width:30%; text-align:center; /*width:120px;*/ max-width:158px; height:40px; border:solid 1px #dcdad6; border-radius:20px; box-sizing:border-box;  margin:0 0.5%;}
+.tab li a{display:block; width:100%; height:40px; border-radius:20px; text-align:center; line-height:40px; color:#898989;}
+.tab li:hover, .tab li.on{background:#003264; border:solid 1px #003264;}
+.tab li:hover a, .tab li.on a{color:#FFF; font-weight:500;}
+
+.pop_wrap{position: absolute; display: table; width: 100%; height: 100%; top: 0; z-index: 999;}
+.pop_blind{display: table-cell; width: 100%; height: 100%; vertical-align: middle;}
+.control_pop{border:solid 1px #031d44; background:#052e6b;}
+.control_pop_con{background:url(../images/common/pop_bg.gif) no-repeat right top #FFF; margin:0 15px; padding:23px 25px; border-radius:20px 20px;}
+.control_pop .c_pop_logo{ margin:18px 0 10px 40px;}
+.control_pop .c_pop_tt{margin-bottom:15px;}
+.control_pop .close_btn{text-align:right; padding:7px 15px 7px 0;}
+.control_pop .close_btn input, .control_pop .close_btn span{vertical-align:middle; margin-left:3px;}
+.control_pop .close_btn a{color:#FFF;}
+
+.board_sch{margin-top:20px; width:100%; max-width:325px; overflow:hidden;}
+.board_sch select.sch{float:left; width:30%; height:35px; border:solid 1px #d9d9d9; margin-right:2%; color:#202023;}
+.board_sch div.search_bar{float:left; width:67%; height:33px; border:solid 1px #d9d9d9;}
+.board_sch div.search_bar input.sch_txt{width:81%; height:33px; border:none;}
+.board_sch div.search_bar button{width:34px; height:33px; background:url(../images/common/sch_icon.gif) no-repeat 10px center; float:right; border:none; outline:none; cursor:pointer;}
+
+.contents01 ul.con_txt{width:100%;}
+.contents01 ul.con_txt li:nth-child(3){margin-bottom:50px;}
+.contents01 ul.con_txt li .m_con_img_left{width:100%;}
+.contents01 ul.con_txt li .m_con_img_left img{width:100%;}
+.contents01 ul.con_txt li .con_img_left{display:none;}
+.contents01 ul.con_txt li .con_line{display:none;}
+.contents01 ul.con_txt li .con_txt_left{margin:30px 10px;}
+.contents01 ul.con_txt li .con_txt_left h5{font-size:18px; font-weight:500; color:#202023;}
+.contents01 ul.con_txt li .con_txt_left p{font-size:13px; margin-top:10px; color:#464646;}
+.contents01 ul.con_txt li .m_con_img_right{width:100%;}
+.contents01 ul.con_txt li .m_con_img_right img{width:100%;}
+.contents01 ul.con_txt li .con_img_right{display:none;}
+.contents01 ul.con_txt li .con_txt_right{margin:30px 10px;}
+.contents01 ul.con_txt li .con_txt_right h5{font-size:18px; font-weight:500;}
+.contents01 ul.con_txt li .con_txt_right p{font-size:13px; margin-top:10px;}
+.contents01 .con_bottom_line{margin:50px 0; width:100%; height:1px; overflow:hidden;}
+
+.contents03 ul.con_txt{width:100%;}
+.contents03 ul.con_txt li:nth-child(3){margin-bottom:50px;}
+.contents03 ul.con_txt li .m_con_img_left{width:100%;}
+.contents03 ul.con_txt li .m_con_img_left img{width:100%;}
+.contents03 ul.con_txt li .con_img_left{display:none;}
+.contents03 ul.con_txt li .con_line{display:none;}
+.contents03 ul.con_txt li .con_txt_left{margin:30px 10px;}
+.contents03 ul.con_txt li .con_txt_left h5{font-size:18px; font-weight:500; color:#202023;}
+.contents03 ul.con_txt li .con_txt_left p{font-size:13px; margin-top:10px; color:#464646;}
+.contents03 ul.con_txt li .m_con_img_right{width:100%;}
+.contents03 ul.con_txt li .m_con_img_right img{width:100%;}
+.contents03 ul.con_txt li .con_img_right{display:none;}
+.contents03 ul.con_txt li .con_txt_right{margin:30px 10px;}
+.contents03 ul.con_txt li .con_txt_right h5{font-size:18px; font-weight:500;}
+.contents03 ul.con_txt li .con_txt_right p{font-size:13px; margin-top:10px;}
+.contents03 .con_bottom_line{margin:50px 0; width:100%; height:1px; overflow:hidden;}
+
+.visual_txt{display:none;}
+
+/* Animation Common */
+.hidden{opacity:0;}
+.visible{opacity:1;}
+.aniDey5{
+        animation-delay:0.5s;
+-webkit-animation-delay:0.5s;
+   -moz-animation-delay:0.5s;
+     -o-animation-delay:0.5s;
+}
+.aniDey10{
+        animation-delay:0s;
+-webkit-animation-delay:0s;
+   -moz-animation-delay:0s;
+     -o-animation-delay:0s;
+}
+.aniDey15{
+        animation-delay:0.5s;
+-webkit-animation-delay:0.5s;
+   -moz-animation-delay:0.5s;
+     -o-animation-delay:0.5s;	
+}
+.aniDey20{
+        animation-delay:0s;
+-webkit-animation-delay:0s;
+   -moz-animation-delay:0s;
+     -o-animation-delay:0s;	
+}
+.aniDey25{
+        animation-delay:0.5s;
+-webkit-animation-delay:0.5s;
+   -moz-animation-delay:0.5s;
+     -o-animation-delay:0.5s;	
+}
+
+/* Main */
+
+/* 뉴스룸 - 공지사항 */
+.con_title03{margin:30px 0 0 0;}
+.board_n{border-top:2px solid #002f6c; }
+.board_n li{display:table; width:100%; border-bottom:1px solid #d9d9d9; padding:20px 0; overflow:hidden;}
+.board_n li .board_notice{display:none; }
+.board_n li .board_notice_m{display:inline-block; padding:20px 15px 0; margin-bottom:-7px; margin-right:5px; background:url(../images/common/notice_icon_m.gif) no-repeat center bottom; }
+.board_n li .board_num{display:none; }
+.board_n li .board_thum{display:none; }
+.board_n li .board_n_con{display:table-cell; }
+.board_n li .board_n_con h5 a{font-size:17px; font-weight:500; color:#202023; vertical-align:top; }
+.board_n li .board_n_con p:nth-child(2){height:40px; margin:5px 0 10px;  overflow:hidden; text-overflow:ellipsis;}
+.board_n li .board_n_con p.btn_area{color:#898989;}
+
+/* 공지사항-view */
+.board_pd{padding:0 10px;}
+.board_01 span.group{display:inline-block; width:45px; line-height:21px; background:#002f6c; border-radius:3px; color:#fff; font-size:12px; text-align:center; font-weight:400; }
+.board_01 span.go{width:100px; line-height:30px; border-radius:15px; color:#fff; text-align:center; font-weight:500; background:#6bb93f;}
+.board_01 span.end{width:100px; line-height:30px; border-radius:15px; color:#fff; text-align:center; font-weight:500; background:#898989;}
+.board_01 span.win{width:100px; line-height:30px; border-radius:15px; color:#fff; text-align:center; font-weight:500; background:#f3900f;}
+.board_01 div.con_m{padding-top:20px;}
+.board_top{width:100%; padding:20px 0;}
+.board_btn{width:100%; max-width:695px; margin-bottom:10px; }
+.board_btn li{display:inline-block; padding-right:10px; margin-left:10px; box-sizing:border-box;  background:url(../images/common/util_line.gif) no-repeat right center; }
+.board_btn li:nth-child(1){margin-left:0;}
+.board_btn li:nth-child(4){background:none;}
+.board_btn li a{display:inline-block; width:100%; text-align:center;}
+.board_btn li.on a{ font-weight:700; color:#202023;}
+.board_s{width:100%;  overflow:hidden;}
+.board_s select.sch{float:left; width:30%; height:40px; border:solid 1px #d9d9d9; margin-right:2%; padding-left:10px; border-radius:3px; background:#fff; }
+.board_s div.search_bar{float:left; width:67%; height:38px; border:solid 1px #d9d9d9; border-radius:3px; }
+.board_s div.search_bar input.sch_txt{width:81%; height:38px; border:none;}
+.board_s div.search_bar button{width:34px; height:38px; background:url(../images/common/icon_search.gif) no-repeat 10px center; float:right; border:none; outline:none; cursor:pointer;}
+.board_e{border-top:2px solid #002f6c;  }
+.board_e li{position:relative; padding:20px 0; border-bottom:1px solid #d9d9d9; overflow:hidden; }
+.board_e_img{width:100%; float:left;  margin-bottom:10px; background:#999; }
+.board_e_img img{width:100%; }
+.board_e_con{width:100%; float:left; }
+.board_e_con dt{margin-bottom:8px;  font-weight:500; color:#202023;}
+.board_e_con dt a{ font-size:17px; font-weight:500; color:#202023;}
+.board_e_con dd, .board_e_con dd a{color:#898989;} 
+.board_e_con dd{white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.board_e_con dd:nth-child(2){height:40px; }
+.board_e_con dd:nth-child(3){display:none; }
+.board_e_state{position:absolute; top:30px; right:0; }
+.board_e_state span{display:block; margin-right:5px; margin-bottom:5px; }
+.board_view_title{padding:20px 0; margin-top:20px; border-top:2px solid #002f6c; border-bottom:1px solid #d9d9d9; }
+.board_view_title p:nth-child(1){font-weight:500; font-size:18px; margin-bottom:5px; color:#202023;}
+.board_view_title p:nth-child(2){color:#898989}
+.board_view_state{width:100%; margin:20px 0;  text-align:right; }
+.board_view_state span{display:inline-block; }
+.board_view_con{width:100%; font-size:15px; word-break:normal; word-wrap: break-word;}
+.board_view_con img{max-width:100%; }
+.board_view_con p{font-size:15px;}
+.board_view_util{margin-top:20px; padding-top:10px; border-top:1px solid #002f6c; }
+.board_view_util a{margin-right:5px; }
+.board_view_util a:last-child{float:right; width:170px; line-height:38px; margin-right:0; text-align:center; border:1px solid #d9d9d9; border-radius:3px; box-sizing:border-box;}
+.board_view_page{width:100%; padding:50px 0; }
+.board_view_page dl{width:100%; line-height:40px; border-top:1px solid #d9d9d9; border-bottom:1px solid #d9d9d9; clear:both; overflow:hidden;}
+.board_view_page dl:nth-child(1){border-bottom:0; }
+.board_view_page dt , .board_view_page dd{float:left; }
+.board_view_page dt{width:13%;}
+.board_view_page dd{width:67%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.board_view_page dd a{color:#898989; }
+.board_view_page dd:last-child{float:right; width:20%; text-align:right; color:#898989; }
+.board_n{border-top:2px solid #002f6c; }
+
+/* 뉴스룸 - 홍보영상 */
+/*
+.contents01 .con_promotion .video{position:relative; padding-bottom:56.25%; padding-top:30px; height:0;}
+.contents01 .con_promotion .video iframe{position:absolute; top:0; left:0; width:100%; height:100%;}
+.contents01 .con_promotion .video object{position:absolute; top:0; left:0; width:100%; height:100%;}
+.contents01 .con_promotion .video embed{position:absolute; top:0; left:0; width:100%; height:100%;}
+.contents01 .con_promotion .video_txt{margin:20px 10px;}
+.contents01 .con_promotion .video_txt h5{font-size:15px; font-weight:bold; color:#202023;}
+.contents01 .con_promotion .video_txt p{color:#464646;}
+.contents01 .con_promotion .sns{float:right; margin:0 10px 30px 0;}
+.contents01 .con_promotion .sns li{float:left; margin-left:10px;}
+.contents01 .con_promotion .vd_thum{width:100%; margin-top:-20px;}
+.contents01 .con_promotion .vd_thum .container{width:100%;}
+.contents01 .con_promotion .vd_thum .container .vd_prev{float:left; width:10%; text-align:center; margin-top:7.5%;}
+.contents01 .con_promotion .vd_thum .container .vd_next{float:right; width:10%; text-align:center; margin-top:7.5%;}
+.contents01 .con_promotion .vd_thum .container ul{overflow:hidden; width:80%; float:left;}
+.contents01 .con_promotion .vd_thum .container ul li{width:49%; float:left; margin-left:2%; position:relative;}
+.contents01 .con_promotion .vd_thum .container ul li img{width:100%; max-width:250px; text-align:center;}
+.contents01 .con_promotion .vd_thum .container ul li:nth-child(3){margin-left:0;}
+.contents01 .con_promotion .vd_thum .container ul li:nth-child(1){display:none;}
+.contents01 .con_promotion .vd_thum .container ul li:nth-child(2){display:none;}
+.contents01 .con_promotion .vd_thum .container ul li img{width:100%;}
+.contents01 .con_promotion .vd_thum .container ul li p{display:none; position:absolute; text-align:center; padding:5px 0;}
+.contents01 .con_promotion .vd_thum .container ul li.vd_thum_on p{display:block; background:#002f6c; width:100%; top:50%; margin-top:-27px; color:#fff;}
+.bx-wrapper{margin:0 auto;}
+*/
+.contents01 .con_promotion{padding:0 10px;}
+.contents01 .con_promotion video{border:1px solid #ddd; box-sizing:border-box;}
+
+/* 뉴스룸 - 수상내역 */
+.award_wrap{}
+.award_main{padding:0 10px;}
+.award_main li{margin-bottom:20px; border-bottom:1px solid #d9d9d9;}
+.award_main li:last-child{margin-bottom:60px; border-bottom:none;}
+.award_main .award_img img{width:100%;}
+.award_main .award_txt{padding:20px 0;}
+.award_main .award_txt dt{font-size:17px; font-weight:500; color:#202023;}
+.award_main .award_txt dd{margin:5px 0 15px; font-size:13px; color:#202023;}
+.award_main .award_txt dd.award_date{margin:0; overflow:hidden;}
+.award_main .award_txt dd.award_date span{float:left; display:block; width:84px; height:30px; line-height:30px; border-radius:15px 15px; background:#002f6c; text-align:center; color:#FFF;}
+.award_main .award_txt dd.award_date p{float:left; margin-left:15px; line-height:30px; color:#002f6c;}
+
+.award_list{width:calc(100% - 20px); height:100%; padding:80px 10px; background:#f7f8f9;}
+.award_list li{padding-bottom:40px; background:url(../images/newsroom/award_bg.gif) repeat-y 75px; overflow:hidden;}
+.award_list li:last-child{padding-bottom:0;}
+.award_list li h6{float:left; width:75px; font-size:22px; font-weight:bold; color:#002f6c;}
+.award_list li div.aw_li{float:right; width:calc(100% - 75px); margin-bottom:10px;}
+.award_list li div:nth-child(2) dl.award_title dt{position:relative;}
+.award_list li div:nth-child(2) dl.award_title dt:before{content:""; position:absolute; top:8px; left:-22px; display:block; width:5px; height:5px; background:url(../images/newsroom/award_dot.png) no-repeat;}
+.award_list li:first-child div:nth-child(2) dl.award_title dt:before{top:0; height:13px; background:url(../images/newsroom/award_dot_first.png) no-repeat;}
+.award_list li:last-child div:last-child{margin-bottom:0;}
+.award_list li dl.award_title dt{float:left; margin:0 10px 0 20px; width:30px; line-height:25px; text-align:left; font-size:15px; font-weight:bold; color:#202023;}
+.award_list li dl.award_title dd{float:left; width:calc(100% - 105px);}
+.award_list li dl.award_title dd.award_tt a{line-height:25px; font-size:15px; font-weight:500; color:#202023;}
+.award_list li dl.award_title dd.up{float:right; width:22px; height:25px; background:url(../images/newsroom/btn_up.gif) no-repeat center center;}
+.award_list li dl.award_title dd.up a{display:block; width:100%; height:100%;}
+.award_list li dl.award_title dd.down{float:right; width:22px; height:25px;background:url(../images/newsroom/btn_down.gif) no-repeat center center;}
+.award_list li dl.award_title dd.down a{display:block; width:100%; height:100%;}
+
+.award_list li dl.award_con{float:right; width:calc(100% - 110px); margin:15px 50px 25px 0;}
+.award_list li dl.award_con dt img{width:100%; max-width:300px;}
+.award_list li dl.award_con dd{margin:15px 0; font-size:13px; color:#404040;}
+.award_list li dl.award_con dd.award_date{margin:0; overflow:hidden;}
+.award_list li dl.award_con dd.award_date span{float:left; display:block; width:84px; height:30px; line-height:30px; border-radius:15px 15px; background:#002f6c; text-align:center; color:#FFF;}
+.award_list li dl.award_con dd.award_date p{float:left; margin-left:15px; line-height:30px; color:#002f6c;}
+
+/* 사회공헌활동 */
+.contents03 ul.board_cam{width:100%;}
+.contents03 ul.board_cam li{width:100%; max-width:578px; border:solid 1px #d9d9d9; display:table; margin-bottom:20px;}
+.contents03 ul.board_cam li .cam_thum img{width:100%; max-width:578px;}
+.contents03 ul.board_cam li .cam_txt{padding:20px;}
+.contents03 ul.board_cam li .cam_txt a h5{font-size:15px; font-weight:bold; color:#002f6c;}
+.contents03 ul.board_cam li .cam_txt a p{margin-top:10px; font-size:13px; color:#202023; height:40px;}
+.contents03 ul.board_cam li .btn_view{background:#fff;float:right; margin:0 20px 20px 0; width:83px; height:28px;  border-radius:15px; border:solid 1px #d9d9d9;}
+.contents03 ul.board_cam li .btn_view:hover{background:#002f6c; border:solid 1px #002f6c;}
+.contents03 ul.board_cam li .btn_view a{display:block; padding-left:20px; background:url(../images/common/icon_enter.png) no-repeat 65px center; width:63px; height:28px; border-radius:15px; color:#898989; font-size:12px; line-height:28px;}
+.contents03 ul.board_cam li .btn_view a:hover{background:url(../images/common/icon_enter_on.png) no-repeat 65px center; color:#fff;}
+
+/* 이디야커피 - 회사소개 */
+.con_philosophy{width:100%; overflow:hidden;}
+.con_philosophy li{text-align:center; margin-bottom:30px;}
+.con_philosophy li .phil_txt h5{font-size:18px; font-weight:500; color:#202023; margin:20px 0;}
+.con_philosophy li .phil_txt p{color:#464646;}
+.con_value .m_val_img{text-align:center; width:100%;}
+.con_value .m_val_img img{width:85%; max-width:500px;}
+.con_value .val_img{display:none;}
+.contents01 ul.con_txt li .con_txt01 p.p_gray{color:#908c82;}
+.con_righteousness{padding:0 10px;}
+.con_righteousness li{margin-bottom:10px;font-size:16px; color:#202023;}
+.con_righteousness li em{font-weight:500;}
+.con_righteousness p{margin-top:30px; font-size:16px;}
+.con_righteousness .report_btn{width:220px; margin:60px auto 0; border-radius:3px; background:#002f6c;}
+.con_righteousness .report_btn a{display:block; width:100%; line-height:50px; font-size:16px; font-weight:500; color:#FFF; text-align:center;}
+
+/* 이디야커피 연혁 */
+.contents01 h5.his_title{font-size:20px; color:#002f6c; text-align:center;}
+.contents01 ul.history_list{background:url(../images/ediya/his_bg.gif) repeat-y center; float:left; width:100%; margin-top:50px;}
+.contents01 ul.history_list li{background:url(../images/ediya/his_dot.png) no-repeat 0 8px;width:50%; margin-bottom:30px; position:relative;}
+.contents01 ul.history_list li:first-child{margin-top:-8px;}
+.contents01 ul.history_list li:last-child{margin-bottom:0;}
+.contents01 ul.history_list li dl{margin-bottom:20px;}
+.contents01 ul.history_list li dl dt{font-size:15px; font-weight:bold; color:#202023;}
+.contents01 ul.history_list li.block_right{float:right; padding-left:2px; background-position-x:0;}
+.contents01 ul.history_list li.block_right dl{overflow:hidden;}
+.contents01 ul.history_list li.block_right dl dt{float:left; margin:0 10px 0 20px; text-align:left; width:30px;}
+.contents01 ul.history_list li.block_right dl dd{width:60%; display:table;}
+.contents01 ul.history_list li.block_left{float:left; padding-right:3px; text-align:right; background-position-x:right;}
+.contents01 ul.history_list li.block_left dl{overflow:hidden;}
+.contents01 ul.history_list li.block_left dl dt{float:right; margin:0 20px 0 10px; text-align:right; width:30px;}
+.contents01 ul.history_list li.block_left dl dd{float:right; width:60%;}
+.contents01 ul.history_list li h6{position:absolute; font-size:22px; color:#002f6c; font-weight:bold;}
+.contents01 ul.history_list li h6.year_right{left:-75px;}
+.contents01 ul.history_list li h6.year_left{right:-75px;}
+.contents01 ul.history_list li .his_img{display:none;}
+
+/* 이디야커피 - ceo 소개 */
+.contents01 .ceo_img{display:none;}
+.contents01 .m_ceo_img{width:100%;}
+.contents01 .m_ceo_img img{width:100%;}
+.contents01 h5.ceo_title{font-size:20px; color:#002f6c; margin:30px 10px;}
+.contents01 .ceo_txt{padding:0 10px; overflow:hidden;}
+.contents01 .ceo_txt p{color:#464646;}
+.contents01 .ceo_txt .ceo_sign{float:right; margin-top:30px; width:128px; text-align:right;}
+.contents01 .ceo_txt .ceo_sign img{margin-top:15px;}
+.contents01 .ceo_his{width:100%; overflow:hidden; margin-top:30px;}
+.contents01 .ceo_his div{border:solid 1px #dcdad6; margin:0 10px; padding: 30px; overflow:hidden;}
+.contents01 .ceo_his div ul{width:100%;}
+.contents01 .ceo_his div ul:first-child{margin-bottom:30px;}
+.contents01 .ceo_his div ul li:first-child{border-bottom:solid 1px #003264; padding-bottom:10px; margin-bottom:10px; font-size:15px; color:#002f6c; font-weight:bold;}
+
+/* 이디야커피 - 오시는 길 */
+.contents01 .map{width:100%; margin-bottom:30px;}
+.contents01 .map img{width:100%; min-width:366px;}
+.contents01 .map_intro01{padding:0 10px;}
+.contents01 .map_intro01 li{margin-bottom:10px;}
+.contents01 .map_intro01 li span{float:left; width:80px; color:#002f6c; font-weight:500;}
+.contents01 .map_intro01 li p{display:table; color:#464646;}
+.contents01 .map_intro02{margin-bottom:30px; padding:0 10px;}
+.contents01 .map_intro02 li{margin-bottom:20px;}
+.contents01 .map_intro02 li img{float:left; margin-right:10px;}
+.contents01 .map_intro02 li span{color:#202023; font-weight:500;}
+.contents01 .map_intro02 li p{display:table; color:#898989;}
+
+/* 이디야연구소 R&D */
+.contents01 .slide_wrap{width:100%; position:relative; display:table;}
+.contents01 .slide_wrap ul li img{width:100%;}
+.contents01 .slide_wrap .slide_btn{position:absolute; bottom:7%; left:50%; margin-left:-66px;}
+.contents01 .slide_btn li{background:url(../images/ediyarab/slide_btn.png) 0 -10px no-repeat; width:10px; height:10px; float:left; overflow:hidden; margin:0 6px;}
+.contents01 .slide_btn li.on{background-position:0 0;}
+.contents01 .slide_btn li a{display:block; text-indent:9999px;}
+.contents01 .slide_prev{position:absolute; left:5%; top:50%; margin-top:-22.5px; z-index:10;}
+.contents01 .slide_next{position:absolute; right:5%; top:50%; margin-top:-22.5px; z-index:10;}
+.contents01 .rab_his{padding:0 10px; margin-bottom:50px;}
+.contents01 .rab_his img{width:100%;}
+.contents01 .barista_his{padding:0 10px; margin-bottom:30px;}
+.contents01 .barista_his li{margin-bottom:15px;}
+.contents01 .barista_his li:last-child{margin-bottom:0;}
+.contents01 .barista_his li p{position:relative; line-height:1.3em; padding-left:10px; font-size:14px;}
+.contents01 .barista_his li p:before{position:absolute; left:0; top:8px; content:""; display:block; width:3px; height:3px; border-radius:50% 50%; background:#002f6c;}
+.contents01 .barista_his li p em{font-weight:500; color:#202023;}
+
+/* 이디야연구소 아카데미 */
+.contents01 .con_spacial .spe_img{display:none;}
+.contents01 .con_spacial div{text-align:center;}
+.contents01 .con_spacial .m_spe_img{width:100%;}
+.contents01 .con_spacial .m_spe_img img{width:80%; max-width:460px;}
+.contents01 .con_academy{display:none;}
+.contents01 .m_con_academy{width:100%; text-align:center;} 
+.contents01 .m_con_academy .aca_step_con{padding:20px; width:60%; margin:0 auto; text-align:left; border-radius:10px;}
+.contents01 .m_con_academy .aca_step_con01{border:solid 10px #1d93d5;}
+.contents01 .m_con_academy .aca_step_con02{border:solid 10px #286ac0;}
+.contents01 .m_con_academy .aca_step_con03{border:solid 10px #1f3a93;}
+.contents01 .m_con_academy .aca_step_con04{border:solid 10px #002f6c;}
+.contents01 .m_con_academy .aca_step_con dl{margin-bottom:20px;}
+.contents01 .m_con_academy .aca_step_con dl:last-child{margin-bottom:0;}
+.contents01 .m_con_academy .aca_step_con dl dt{color:#202023; font-size:15px; font-weight:500;}
+.contents01 .m_con_academy .aca_step_con dl dd{color:#464646; font-size:13px;}
+
+/* 프랜차이즈 가맹안내 */
+.contents01 .office_phone_num{overflow:hidden; margin:0 10px; border:solid 1px #d9d9d9; border-top:solid 1px #002f6c; padding:20px;}
+.contents01 .office_phone_num li{margin:0 auto; margin-bottom:20px; box-sizing:border-box;}
+.contents01 .office_phone_num li:last-child{margin-bottom:0;}
+.contents01 .office_phone_num li dl{display:table; margin:auto;}
+.contents01 .office_phone_num li dl dt{display:table-cell; vertical-align:middle; width:100px; font-size:18px; color:#002f6c; font-weight:500; text-align:center;}
+.contents01 .office_phone_num li dl dt span{display:block; font-size:16px; color:#44638c;}
+.contents01 .office_phone_num li dl dd{display:table-cell; vertical-align:middle; background:url(../images/franchise/call_icon.gif) no-repeat left center; margin-left:60px; font-size:18px; line-height:25px; padding-left:35px; font-weight:400;}
+.contents01 .open_graph{margin:30px 10px;}
+.contents01 .open_graph img{width:100%;}
+.contents01 .success_sys{margin:0 10px;}
+.contents01 .success_sys li{margin-bottom:30px;}
+.contents01 .success_sys .sys_icon{float:left; width:40px; margin-right:10px;}
+.contents01 .success_sys .sys_icon img{width:100%;}
+.contents01 .success_sys .sys_txt{}
+.contents01 .success_sys .sys_txt h6{font-size:18px; line-height:40px; font-weight:500;}
+.contents01 .success_sys .sys_txt p{margin-top:10px; margin-bottom:20px; font-size:15px;}
+.contents01 .m_fran_step{background:url(../images/franchise/m_fran_step.gif) no-repeat center top; height:1120px; position:relative;}
+.contents01 .m_fran_step .fr_stp{position:absolute; width:26%; background-color:#FFF; padding:10px; border:solid 1px #d9d9d9;}
+.contents01 .m_fran_step .fr_stp dt{font-size:15px; color:#202023; font-weight:500;}
+.contents01 .m_fran_step .fr_stp dd{font-size:13px; color:#202023;}
+.contents01 .m_fran_step .fr_stp01{left:10px; top:11px; text-align:right;}
+.contents01 .m_fran_step .fr_stp02{right:10px; top:140px;}
+.contents01 .m_fran_step .fr_stp03{left:10px; top:268px; text-align:right;}
+.contents01 .m_fran_step .fr_stp04{right:10px; top:396px;}
+.contents01 .m_fran_step .fr_stp05{left:10px; top:525px; text-align:right;}
+.contents01 .m_fran_step .fr_stp06{right:10px; top:653px;}
+.contents01 .m_fran_step .fr_stp07{left:10px; top:781px; text-align:right;}
+.contents01 .m_fran_step .fr_stp08{right:10px; top:908px;}
+.contents01 .fran_step{display:none;}
+
+.financial_item{margin:30px 10px 60px;}
+.financial_item table{text-align:center;}
+.financial_item th{background:#f5f5f5; border-top:1px solid #002f6c; border-right:1px solid #d9d9d9; height:50px; color:#202023;}
+.financial_item th:last-child{border-right:none;}
+.financial_item td{padding:10px 20px; border:1px solid #d9d9d9; color:#464646;}
+.financial_item td:first-child{border-left:none;}
+.financial_item td:last-child{border-right:none;}
+
+.hana_floating_bn{position:fixed; bottom:230px; left:50%; margin-left:-119px; z-index:10;}
+.hana_floating_bn .close_btn{position:absolute; right:0; top:-5px; z-index:11;}
+
+/* 프렌차이즈 투자비용 */
+.contents01 .cost_table{padding:0 10px; word-break:break-all;}
+.contents01 .cost_table table thead tr th{background:#f5f5f5; border-top:solid 1px #002f6c; border-right:solid 1px #d9d9d9; height:50px; color:#202023;}
+.contents01 .cost_table table thead tr th:last-child{border-right:none;}
+.contents01 .cost_table table tbody tr td{padding:10px 20px; border:solid 1px #d9d9d9; color:#464646;}
+.contents01 .cost_table table tbody tr td.td_cen{text-align:center;}
+.contents01 .cost_table table tbody tr td.td_bdl_n{border-left:none;}
+.contents01 .cost_table table tbody tr td.td_bdr_n{border-right:none;}
+.contents01 .cost_table table tbody tr td.td_color{color:#002f6c;}
+.contents01 .top_right_txt{float:right; margin-bottom:10px; margin-right:10px;}
+.contents01 .bot_left_txt{margin-top:10px; color:#002f6c; margin-left:10px;}
+.contents01 .cost_btn{padding:8px 0;}
+.contents01 .cost_btn a{display:inline-block; width:140px; height:25px; line-height:25px; text-align:center; padding-right:7px; background:url(../images/common/icon_enter_on.png) no-repeat 135px center #002f6c; border:1px solid #002f6c; border-radius:3px; color:#fff; font-size:11px;}
+.contents01 .cost_calcul{padding:23px 10px 0; font-size:15px;}
+.contents01 .cost_calcul h3{margin-bottom:11px; color:#202023; font-size:13px; font-weight:500;}
+.contents01 .cost_calcul h3 em{font-size:18px; font-weight:500;}
+.contents01 .cost_calcul input{width:51px; height:26px; text-align:center; border:2px solid #002f6c; color:#002f6c; font-size:16px; font-weight:500;}
+.contents01 .cost_calcul .cost_result{color:#002f6c; font-weight:500;}
+
+/* 프렌차이즈 faq */
+.board_faq{border-top:1px solid #002f6c; margin:0 10px;}
+.board_faq li{border-bottom:1px solid #d9d9d9; }
+.board_faq li .board_q{overflow:hidden; padding:10px 0; }
+.board_faq li .board_q dt,
+.board_faq li .board_q dd:nth-child(3){ float:left;  padding-top:3px; }
+.board_faq li .board_q dd:nth-child(2){float:left; line-height:1.2em;}
+.board_faq li .board_q dt {width:10%; text-align:center; font-family:'나눔스퀘어', NanumSquare, NS, '맑은 고딕', MalgunGothic, '돋움', Dotum; font-weight:900; /*font-size:24px;*/ font-size:20px; color:#002f6c; }
+.board_faq li .board_q dd:nth-child(2){width:80%; }
+.board_faq li .board_q dd:nth-child(2) a{font-size:15px; color:#002f6c; }
+.board_faq li .board_q dd:nth-child(3) {width:10%;}
+.board_faq li .board_q dd:nth-child(3) a{display:inline-block; width:100%; height:100%; }
+.board_faq li .board_q dd.down{background:url(../images/common/btn_down.gif) no-repeat center center;}
+.board_faq li .board_q dd.up{background:url(../images/common/btn_up.gif) no-repeat center center;}
+.board_faq li .board_a{background:#f5f5f5; padding:10px 10px 10px 0; overflow:hidden; }
+.board_faq li .board_a dt , .board_faq li .board_a dd{float:left; }
+.board_faq li .board_a dt {width:10%; text-align:center;   font-family:'나눔스퀘어', NanumSquare, NS, '맑은 고딕', MalgunGothic, '돋움', Dotum; font-weight:900; /*font-size:24px;*/ font-size:20px; color:#898989; }
+.board_faq li .board_a dd {width:80%;}
+
+.hash_list{display:none;}
+
+/* 프렌차이즈 가맹상담신청 */
+.contents01 .applli_con{padding:0 10px;}
+.contents01 .applli_con .agree_wrap .agr_box{overflow:auto; height:100px; background:#f5f5f5; padding:20px; border:solid 1px #d9d9d9;}
+.contents01 .applli_con .agree_wrap .agr_box .agr_title{font-weight:bold;}
+.contents01 .applli_con .agree_wrap .agr_box .agr_title em{color:#002f6c;}
+.contents01 .applli_con .agree_wrap .agr_box .p{color:#464646;}
+.contents01 .applli_con .agree_wrap .agr_check{margin-top:12px;}
+.contents01 .applli_con .agree_wrap .agr_check input[type="checkbox"]:not(old){width:13px; opacity:0;}
+.contents01 .applli_con .agree_wrap .agr_check input[type="checkbox"]:not(old) + label{display:inline-block; background:url(../images/franchise/ck_off.png) no-repeat; width:13px; height:13px; margin-left:-15px;}
+.contents01 .applli_con .agree_wrap .agr_check input[type="checkbox"]:not(old):checked + label{display:inline-block; background:url(../images/franchise/ck_on.png) no-repeat; width:13px; height:13px; margin-left:-15px;}
+.contents01 .applli_con .agree_wrap .agr_check span{margin-left:8px; margin-top:-5px;}
+.contents01 .applli_con .applli_form{margin-top:30px;}
+.contents01 .applli_con .applli_form span.applli_em{background:url(../images/franchise/ck_icon.png) no-repeat 0 5px; padding-left:25px; margin-bottom:10px; display:block;}
+.contents01 .applli_con .applli_form table{border-top:solid 1px #002f6c;}
+.contents01 .applli_con .applli_form table tr{border-bottom:solid 1px #d9d9d9;}
+.contents01 .applli_con .applli_form table tr th{padding:10px; background:url(../images/franchise/ck_icon.png) no-repeat 10px center; background-color:#f5f5f5; text-align:left; width:47%; max-width:130px;}
+.contents01 .applli_con .applli_form table tr th.icon_none{background:none; background-color:#f5f5f5;}
+.contents01 .applli_con .applli_form table tr th label{margin-left:15px;}
+.contents01 .applli_con .applli_form table tr td{padding:5px 10px;}
+.contents01 .applli_con .applli_form table tr td input{width:80%; margin:5px 0; border:solid 1px #e8e8e8; box-sizing:border-box;}
+.contents01 .applli_con .applli_form table tr td #user_hp1, #user_hp2, #user_hp3{width:25.5%; margin:0 3px;}
+.contents01 .applli_con .applli_form table tr td #user_hp1{margin-left:0;}
+.contents01 .applli_con .applli_form table tr td #user_hp3{margin-right:0;}
+.contents01 .applli_con .applli_form table tr td #mail{margin-right:3px;}
+.contents01 .applli_con .applli_form table tr td select{border:solid 1px #e8e8e8; width:80%;}
+.contents01 .applli_con .applli_form table tr td #mail2{margin:5px 0; width:80%;}
+.contents01 .applli_con .applli_form table tr td textarea{border:solid 1px #e8e8e8;}
+.contents01 .applli_con .applli_form table tr td select:nth-child(2){margin-left:5px;}
+.contents01 .applli_con .applli_form table tr td #area, #area_1, #area01, #area01_1, #area02, #area02_1{width:47%}
+.contents01 .applli_con .applli_form table tr td #mail02{margin:0 0 5px 0;}
+.contents01 .applli_con .applli_form table tr td #inquiry{width:100%; height:280px; margin-top:5px;}
+.contents01 .applli_con .applli_btn{width:243px; margin:30px auto 0;}
+.contents01 .applli_con .applli_btn div{float:left; width:120px; height:40px; border-radius:20px; text-align:center;}
+.contents01 .applli_con .applli_btn div a{width:120px; height:40px; border-radius:20px; display:block; line-height:40px;}
+.contents01 .applli_con .applli_btn .regi_btn{background:#002f6c;}
+.contents01 .applli_con .applli_btn .regi_btn a{color:#FFF;}
+.contents01 .applli_con .applli_btn .cancle_btn{border:solid 1px #d9d9d9; box-sizing:border-box; margin-left:3px;}
+.contents01 .applli_con .applli_btn .cancle_btn a{color:#898989;}
+.contents01 .applli_con .applli_form table tr td p.phone_txt{margin-top:10px; color:#ff0000;}
+
+.contents01 .franchise_info{padding:0 10px; margin-bottom:40px;}
+.contents01 .franchise_info p{font-size:16px;}
+.contents01 .franchise_info span{font-size:18px; font-weight:500; color:#002f6c;}
+.contents01 .franchise_info ul{margin-top:20px;}
+.contents01 .franchise_info li{position:relative; margin-bottom:5px; font-size:16px; padding-left:15px;}
+.contents01 .franchise_info li:before{content:""; display:block; width:4px; height:4px; background:#002f6c; position:absolute; top:10px; left:0;}
+.contents01 .franchise_info li a{display:inline-block; padding:3px 5px; border:1px solid #ddd; box-sizing:border-box; font-size:14px;}
+.contents01 .franchise_info li a:first-child{margin-right:5px;}
+
+/* 창업설명회 안내 */
+.contents01 .info_add{margin:25px 10px 30px; padding:35px 20px; text-align:center; background:#d1e2ea; box-sizing:border-box;}
+.contents01 .info_add h3{color:#002f6c; font-size:22px; font-weight:500; line-height:1.2em;}
+.contents01 .info_add h3:after{display:block; content:""; width:25px; height:3px; margin:14px auto 20px; background:#002f6c;}
+.contents01 .info_add p{color:#202023; font-size:16px; line-height:1.4em;}
+.contents01 .info_add p em{font-weight:500;}
+.contents01 .info_btn{display:table; margin:20px auto 0;}
+.contents01 .info_btn a{display:block; width:150px; height:40px; line-height:40px; text-align:center; background:#002f6c; border-radius:20px; color:#FFF; font-size:14px; font-weight:500;}
+
+/* 드림팩토리 */
+.dream_txt{padding:0 10px 50px;}
+.dream_txt .dt{line-height:1.3em; font-size:22px; text-align:center;}
+.dream_txt .dt:after{content:""; display:block; width:25px; height:3px; background:#213a7f; margin:20px auto 30px;}
+.dream_txt .dd{line-height:1.8em; font-size:16px; color:#606060; text-align:center;}
+.dream_txt dd.dream_txt_li{margin:30px auto;}
+.dream_txt dd.dream_txt_li ul{font-size:0; text-align:center;}
+.dream_txt dd.dream_txt_li li{display:inline-block; width:50%; margin-bottom:20px;}
+.dream_txt dd.dream_txt_li li dl{display:block; width:135px; height:90px; margin:auto; padding-top:45px; border-radius:80px; background:#f5f5f5; text-align:center;}
+.dream_txt dd.dream_txt_li li dt{font-size:14px; font-weight:700; color:#858585;}
+.dream_txt dd.dream_txt_li li dd{line-height:1.5em; font-size:18px; font-weight:900; color:#213a7f;}
+
+.dream_machine{padding:80px 10px 40px; background:#173466;}
+.factory_tt dt{text-align:center; font-size:22px; line-height:1.3em; color:#FFF;}
+.factory_tt dt:after{content:""; display:block; width:25px; height:3px; background:#FFF; margin:20px auto 30px;}
+.machine_list li{margin-bottom:40px;}
+.machine_list li .machine_img{width:100%; max-width:640px; margin:auto;}
+.machine_list li .machine_img img{width:100%;}
+.machine_list li .machine_info{max-width:640px; margin:auto; padding:30px 0; overflow:hidden;}
+.machine_list li .machine_info dt{font-size:18px; font-weight:700; color:#FFF;}
+.machine_list li .machine_info dt p{font-size:14px; color:#778db3;}
+.machine_list li .machine_info dd{margin-top:15px; font-size:16px; color:#FFF; opacity:0.7;}
+.machine_list li .machine_info dd.machine_btn{float:right; margin-top:40px; opacity:1.0;}
+.machine_list li .machine_info dd.machine_btn a{padding:8px 25px; border:1px solid #FFF; font-size:14px; color:#FFF; text-align:center; letter-spacing:2px;}
+
+.dream_safety{padding:80px 10px;}
+.dream_safety .dream_txt{padding:0 10px;}
+.dream_safety .safety_li li:last-child{margin-top:20px;}
+.dream_safety .safety_li li img{width:100%;}
+.dream_safety .safety_li p{margin-top:30px; font-size:18px; color:#606060; text-align:center;}
+.dream_safety .safety_li p em{font-weight:700; color:#303030;}
+.dream_safety .certifi_li{margin-top:60px; padding:40px 20px; background:#f5f5f5; text-align:center;}
+.dream_safety .certifi_li li:last-child{margin-top:40px;}
+.dream_safety .certifi_li li .img{max-width:250px; margin:0 auto 20px;}
+.dream_safety .certifi_li li .img img{width:100%;}
+.dream_safety .certifi_li li dt{font-size:18px; font-weight:700; color:#303030;}
+.dream_safety .certifi_li li dd{margin-top:5px; font-size:16px; line-height:1.4em; color:#606060;}
+
+.produ_process{padding:80px 10px 40px; background:url(../images/dream/produ_pro_bg.jpg) no-repeat; background-size:cover;}
+.produ_step{text-align:center;}
+.produ_step li{margin-bottom:50px;}
+.produ_step li .step_num{display:block; width:30px; height:30px; margin:0 auto 20px; border-radius:15px; line-height:30px; font-weight:900; font-size:14px; color:#333333; background:#FFF;}
+.produ_step li dt{font-size:18px; font-weight:700; color:#FFF;}
+.produ_step li dd{width:80%; margin:5px auto; line-height:1.4em; font-size:16px; color:#FFF; opacity:0.7;}
+
+.dream_movie{max-width:1180px; width:90%; margin:0 auto; padding:80px 0; border-bottom:1px solid #d9d9d9;}
+.dream_movie .dr_movie_tt dt{line-height:1.3em; font-size:22px; text-align:center;}
+.dream_movie .dr_movie_tt dt:after{content:""; display:block; width:25px; height:3px; background:#213a7f; margin:20px auto 30px;}
+.dream_movie .dr_movie{position:relative; width:100%; padding-bottom:56.25%;}
+.dream_movie .dr_movie iframe{position:absolute; width:100%; height:100%;}
+
+.facility{position:relative; padding:80px 0; z-index:49;}
+.facility .fac_btn{position:absolute; top:223px; right:10px; z-index:51;}
+.facility .fac_btn li{float:left; margin-left:6px;}
+.facility .fac_btn li a{display:block; width:50px; height:50px;}
+.facility .fac_btn li a img{width:100%;}
+.facility .fac_tt{padding:0 10px 30px; text-align:center;}
+.facility .fac_tt dt{line-height:1.3em; font-size:22px;}
+.facility .fac_tt dt:after{content:""; display:block; width:25px; height:3px; background:#213a7f; margin:20px auto 30px;}
+.facility .fac_tt dd{font-size:16px; color:#606060;}
+.facility .fac_img img{width:100%;}
+.dream_map .map_wrap{width:100%; height:300px; overflow:hidden;}
+.map_info{padding:0 10px 30px; text-align:center;}
+.map_info .map_tt dt{line-height:1.3em; font-size:22px;}
+.map_info .map_tt dt:after{content:""; display:block; width:25px; height:3px; background:#213a7f; margin:20px auto 30px;}
+.map_info .map_tt dd{font-size:16px; color:#606060;}
+.map_info .map_tt dd.call{font-size:20px; font-weight:700; color:#909090;}
+
+/* 드림물류센터 */
+.dream_process{padding:80px 0 50px; margin-bottom:50px; background:#173466;}
+.process_tt dt{text-align:center; font-size:22px; line-height:1.3em; color:#FFF;}
+.process_tt dt:after{content:""; display:block; width:25px; height:3px; background:#FFF; margin:20px auto 30px;}
+.dream_step{width:90%; margin:auto;}
+.dream_step{overflow:hidden;}
+.dream_step li{float:left; width:42%; margin-bottom:30px; text-align:center;}
+.dream_step li.step_line{display:block; width:16%; height:3px; margin-top:48px; background:url(../images/dream/step_line.png) center no-repeat;}
+.dream_step li:nth-child(4n){display:none;}
+.dream_step dt{margin-top:10px; font-size:18px; font-weight:700; color:#FFF;}
+.dream_step dd{}
+.dream_step dd div{position:relative; display:inline-block;}
+.dream_step dd img{width:100px;}
+.dream_step span img{width:100% !important; height:auto;}
+.dream_keep{border-bottom:1px solid #e6e6e6; margin-bottom:60px;}
+.keep_tt{margin-bottom:40px;}
+.keep_tt dt{text-align:center; font-size:22px; line-height:1.3em;}
+.keep_tt dt:after{content:""; display:block; width:25px; height:3px; background:#213a7f; margin:20px auto 20px;}
+.keep_tt dd{text-align:center; font-size:18px; color:#606060;}
+.keep_list{text-align:center;}
+.keep_list li{margin-bottom:50px;}
+.keep_list li dd{margin-top:20px;}
+.keep_list li dd span{font-size:18px; font-weight:700; color:#213a7f;}
+.keep_list li dd p{width:80%; margin:5px auto; line-height:1.4em; font-size:16px; color:#606060;}
+
+/* 드림팩토리 팝업 */
+.dream_pop_wrap{position:absolute; width:100%; height:100%; display:table;}
+.dream_pop_blind{display:table-cell; width:100%; height:100%; vertical-align:middle;}
+.dream_pop_blind:after{display:block; content:""; position:fixed; top:0; width:100%; height:100%; background:#000; opacity:0.7; z-index:90;}
+.dream_pop{position:relative; width:92%; max-width:600px; margin:auto; background:url(../images/dream/machine_pop_bg.jpg) #1e447e bottom no-repeat; border:5px solid #FFF; border-radius:10px; box-sizing:border-box; z-index:99;}
+.dream_pop .pop_close{position:absolute; top:30px; right:30px;}
+.dream_pop .pop_close a{display:block;}
+.dream_pop .pop_con{padding:40px 30px;}
+.dream_pop .pop_con dt{padding-bottom:20px; border-bottom:1px solid #8b9ab3; font-size:18px; font-weight:700; color:#FFF;}
+.dream_pop .pop_con dt p{font-size:14px; color:#778dbf;}
+.dream_pop .pop_con dd{line-height:1.8em; margin-top:20px; font-size:16px; color:#FFF; opacity:0.7;}
+
+/* 정도경영신고센터 팝업 */
+.report_center{max-width:560px; margin:auto;padding:40px 5% 80px;}
+.report_center .con_title{margin:0;}
+.report_center .report_con01{margin-bottom:50px; padding-bottom:60px; border-bottom:1px solid #ddd;}
+.report_center .report_con01 .con_title{margin-bottom:30px;}
+.report_center .report_con01 dl{margin-bottom:40px;}
+.report_center .report_con01 dl:last-child{margin-bottom:0;}
+.report_center .report_con01 dt{margin-bottom:10px; font-size:18px; font-weight:500; color:#202023;}
+.report_center .report_con01 dl.info_con dd p{position:relative; padding-left:10px; margin-bottom:8px; font-size:16px; line-height:1.6em; color:#606060; word-break:keep-all;}
+.report_center .report_con01 dl.info_con dd p:before{content:""; position:absolute; display:block; width:3px; height:3px; background:#606060; left:0; top:10px;}
+.report_center .report_con01 dl.info_con dd p.bullet_no{padding-left:0;}
+.report_center .report_con01 dl.info_con dd p.bullet_no:before{display:none;}
+.report_center .report_con01 dl.step_con dt{margin-bottom:18px;}
+.report_center .report_con01 dl.step_con dd li{position:relative; padding:20px 20px; margin-bottom:50px; border:2px solid #ddd; text-align:center; box-sizing:border-box;}
+.report_center .report_con01 dl.step_con dd li:after{content:""; position:absolute; display:block; width:20px; height:20px; bottom:20px; left:50%; bottom:-30px; margin-left:-11px; border-right:3px solid #002f6c; border-bottom:3px solid #002f6c; transform:rotate(45deg); box-sizing:border-box;}
+.report_center .report_con01 dl.step_con dd li:last-child{margin-bottom:0;}
+.report_center .report_con01 dl.step_con dd li:last-child:after{display:none;}
+.report_center .report_con01 dl.step_con dd li > span{display:block; font-size:16px; font-weight:500; color:#202023;}
+.report_center .report_con01 dl.step_con dd li p{position:relative; display:inline-block; padding-left:8px; margin-bottom:10px;font-size:15px; line-height:1.4em; color:#606060;}
+.report_center .report_con01 dl.step_con dd li p:before{content:""; position:absolute; display:block; width:2px; height:2px; background:#606060; left:0; top:9px;}
+.report_center .report_con01 dl.step_con dd li p:nth-child(2){margin-top:10px;}
+.report_center .report_con01 dl.step_con dd li p:last-child{margin-bottom:0;}
+.report_center .report_con02{margin-bottom:50px; padding-bottom:60px; border-bottom:1px solid #ddd;}
+.report_center .report_con02 .agree_txt{margin:10px 0 20px; font-size:15px; color:#202023; word-break:keep-all;}
+.report_center .report_con02 h3{font-size:16px; font-weight:500; color:#202023;}
+.report_center .report_con02 h3 em{font-weight:500; color:#f74f4f;}
+.report_center .report_con02 .agree_box{margin:10px 0; padding:15px 20px; border:1px solid #ddd; border-radius:3px; background:#f5f5f5;}
+.report_center .report_con02 .agree_box dt{font-size:15px; color:#202023;}
+.report_center .report_con02 .agree_box dd p{position:relative; display:inline-block; padding-left:8px; margin-top:10px; font-size:15px; line-height:1.4em; color:#606060; word-break:keep-all;}
+.report_center .report_con02 .agree_box dd p:before{content:""; position:absolute; display:block; width:2px; height:2px; background:#606060; left:0; top:9px;}
+.report_center .report_con02 input{display:inline-block; width:15px; height:15px; margin-top:5px; margin-right:5px; vertical-align:top;}
+.report_center .report_con02 label{display:inline-block; width:calc(100% - 20px); vertical-align:top; font-size:16px; line-height:1.4em;}
+.report_center .report_con03 .con_title{margin-bottom:20px;}
+.report_center .report_con03 .report_box{margin-bottom:40px; padding-bottom:40px; border-bottom:1px solid #ddd;}
+.report_center .report_con03 dl{display:table; width:100%; margin-bottom:20px;}
+.report_center .report_con03 dl:last-child{margin-bottom:0;}
+.report_center .report_con03 dt{display:table-cell; width:80px; font-size:16px; font-weight:500; color:#202023; vertical-align:middle;}
+.report_center .report_con03 dd{display:table-cell; width:calc(100% - 80px); vertical-align:middle;}
+.report_center .report_con03 dl.table_none dt{display:block; margin-bottom:10px;}
+.report_center .report_con03 dl.table_none dd{display:block; width:100%;}
+.report_center .report_con03 dd input{width:100%; height:40px; padding-left:12px; border:1px solid #ddd; box-sizing:border-box; font-size:14px; color:#606060;}
+.report_center .report_con03 dd select{width:100%; height:40px; padding-left:12px; border:1px solid #ddd; box-sizing:border-box; font-size:14px; color:#606060;}
+.report_center .report_con03 dd textarea{width:100%; height:150px; padding:12px 12px; border:1px solid #ddd; resize:none; box-sizing:border-box; font-size:14px; color:#606060;}
+.report_center .report_con03 dl.call dd input{width:30%;}
+.report_center .report_con03 dl.call dd span{display:inline-block; width:5%; text-align:center;}
+.report_center .report_con03 p{font-size:16px; color:#606060; word-break:keep-all;}
+.report_center .report_con03 .submit_btn{width:220px; margin:auto; border-radius:3px; background:#002f6c;}
+.report_center .report_con03 .submit_btn input{display:block; border:none; background:none; width:100%; line-height:50px; font-size:16px; font-weight:500; color:#FFF; text-align:center; font-family:'Noto Sans KR', '나눔고딕', NanumGothic, '맑은 고딕', MalgunGothic, '돋움', Dotum, sans-serif; cursor:pointer;}
+
+/* 350px 이상 해상도 */
+@media screen and (min-width:350px){
+.contents01 .applli_con .applli_form table tr th{width:45%;}
+.contents01 .applli_con .applli_form table tr th label{margin-left:25px;}
+.contents01 ul.history_list li.block_right dl dd{width:65%;}
+.contents01 ul.history_list li.block_left dl dd{width:65%;}
+}
+
+/* 559px 이상 해상도 */
+@media screen and (min-width:559px){
+.report_center .report_con01 dl.step_con dd li p span.block_txt{display:block;}
+}
+
+/* 640px 이상 해상도 */
+@media screen and (min-width:640px){
+/* Common */
+.contents{position:relative; overflow:hidden; padding:0 20px;}
+.contents01{margin-bottom:50px;}
+.contents02{margin:0 40px;}
+.contents04{margin:60px 0 0;}
+
+.con_ts{overflow:hidden;}
+
+.con_title{margin:0 0 30px 20px;}
+.con_title h2{background:url(../images/common/contents_bull.gif) no-repeat left center; padding-left:20px; font-size:24px; color:#202023; }
+.con_title p{margin-top:10px; font-size:15px; color:#202023;}
+.con_title02{float:left;}
+.con_title04{margin:30px 0 20px;}
+.con_title05{margin:30px 20px 20px;}
+
+.tab{/*width:496px;*/ margin:0 20px 24px 0; text-align:right; }
+.tab li{display:inline-block; width:160px; height:40px; border:solid 1px #dcdad6; border-radius:20px; box-sizing:border-box; margin:0 4px; }
+.tab li:first-child{margin-left:0;}
+.tab li:last-child{margin-right:20px;}
+.tab li a{display:block; width:160px; height:40px; border-radius:20px; text-align:center; line-height:40px; color:#898989;}
+.tab li:hover, .tab li.on{background:#003264; border:solid 1px #003264;}
+.tab li:hover a, .tab li.on a{color:#FFF;}
+
+.board_sch{float:right;}
+.board_sch select.sch{width:98px; margin-ri ght:5px;}
+.board_sch div.search_bar{width:220px;}
+.board_sch div.search_bar input.sch_txt{width:186px; height:33px; border:none;}
+
+.contents01 ul.con_txt{width:100%;}
+.contents01 ul.con_txt li{width:100%; /*min-width:750px;*/ display:table; margin-bottom:40px; box-sizing:border-box;}
+.contents01 ul.con_txt li:nth-child(3){margin-bottom:80px;}
+.contents01 ul.con_txt li .m_con_img_left{display:none;}
+.contents01 ul.con_txt li .con_img_left{display:block; float:left; width:44%; padding-left:20px;}
+.contents01 ul.con_txt li .con_img_left img{width:100%;}
+.contents01 ul.con_txt li .con_line{display:block; height:1px; margin:20px 0;}
+.contents01 ul.con_txt li .con_txt_left{float:right; width:50%; /*margin:0 20px 3% 0;*/margin:0; padding-right:20px; box-sizing:border-box;}
+.contents01 ul.con_txt li .con_txt_left h5{font-size:18px; font-weight:500;}
+.contents01 ul.con_txt li .con_txt_left p{font-size:13px; margin-top:10px;}
+.contents01 ul.con_txt li .m_con_img_right{display:none;}
+.contents01 ul.con_txt li .con_img_right{display:block; float:right; width:44%; margin-right:20px;}
+.contents01 ul.con_txt li .con_img_right img{width:100%;}
+.contents01 ul.con_txt li .con_line{display:block; height:1px; margin:20px 0;}
+.contents01 ul.con_txt li .con_txt_right{ float:left;  width:50%; /*margin:0 0 3% 20px;*/ margin:0; padding-left:20px; box-sizing:border-box;}
+.contents01 ul.con_txt li .con_txt_right h5{font-size:18px; font-weight:500;}
+.contents01 ul.con_txt li .con_txt_right p{font-size:13px; margin-top:10px;}
+.visual_txt{display:block;}
+
+/* Animation Common */
+.aniDey5{
+        animation-delay:0.5s;
+-webkit-animation-delay:0.5s;
+   -moz-animation-delay:0.5s;
+     -o-animation-delay:0.5s;
+}
+.aniDey10{
+        animation-delay:1.0s;
+-webkit-animation-delay:1.0s;
+   -moz-animation-delay:1.0s;
+     -o-animation-delay:1.0s;
+}
+.aniDey15{
+        animation-delay:1.0s;
+-webkit-animation-delay:1.0s;
+   -moz-animation-delay:1.0s;
+     -o-animation-delay:1.0s;	
+}
+.aniDey20{
+        animation-delay:1.5s;
+-webkit-animation-delay:1.5s;
+   -moz-animation-delay:1.5s;
+     -o-animation-delay:1.5s;
+}
+.aniDey25{
+        animation-delay:2.0s;
+-webkit-animation-delay:2.0s;
+   -moz-animation-delay:2.0s;
+     -o-animation-delay:2.0s;
+}
+
+
+.aniDey30{
+        animation-delay:3.0s;
+-webkit-animation-delay:3.0s;
+   -moz-animation-delay:3.0s;
+     -o-animation-delay:3.0s;
+}
+/* Main */
+
+/* 뉴스룸 - 공지사항 */
+.con_title03{margin:30px 0 0 0;}
+.board_n{margin-top:20px;}
+.board_n li .board_notice{display:table-cell; width:10%; vertical-align:middle; text-align:center; background:url(../images/common/notice_icon.gif) no-repeat center center;}
+.board_n li .board_notice_m{display:none; }
+.board_n li .board_num{display:table-cell; width:10%; vertical-align:middle; text-align:center; color:#202023; font-weight:700;}
+.board_n li .board_thum{display:table-cell;  width:280px; padding-right:20px;  vertical-align: middle;}
+.board_n li .board_thum a{display:inline-block; width:100%; }
+.board_n li .board_thum a img{width:100%; }
+.board_n li .board_n_con{ vertical-align: middle; height:135px; }
+
+/* 공지사항-view */
+.board_top{position:absolute; top:40px; right:20px;}
+.board_btn{width:35%; float:left; }
+.board_btn li a{font-size:15px;}
+.board_pd{padding:0 20px;}
+.board_01 .group{padding:0; width:45px; line-height:21px;}
+.board_s{width:70%; max-width:325px; float:right; overflow:hidden;}
+.board_view_title{}
+.board_n li .board_notice{display:table-cell; width:10%; vertical-align:middle; text-align:center; background:url(../images/common/notice_icon.gif) no-repeat center center; }
+.board_n li .board_notice_m{display:none; }
+.board_n li .board_num{display:table-cell; width:10%; vertical-align:middle; text-align:center; color:#202023; font-weight:700;}
+.board_n li .board_thum{display:table-cell;  width:280px; padding-right:20px;  vertical-align: middle;}
+.board_n li .board_thum a{display:inline-block; width:100%; }
+.board_n li .board_thum a img{width:100%; }
+.board_n li .board_n_con{ vertical-align: middle; height:135px; }
+
+/* 뉴스룸 - 홍보영상 */
+/*
+.contents01 .con_promotion .video_txt{margin:20px;}
+.contents01 .con_promotion .video_txt h5{font-size:20px; margin-bottom:15px;}
+.contents01 .con_promotion .video_txt p{font-size:15px;}
+.contents01 .con_promotion .sns{margin:0 20px 50px 0;}
+.contents01 .con_promotion .vd_thum{margin-top:0;}
+.contents01 .con_promotion .vd_thum .container .vd_prev{float:left; width:10%; text-align:center; margin-top:4%;}
+.contents01 .con_promotion .vd_thum .container .vd_next{float:right; width:10%; text-align:center; margin-top:4%;}
+.contents01 .con_promotion .vd_thum .container ul li{width:24%; margin-left:1%;}
+.contents01 .con_promotion .vd_thum .container ul li:nth-child(3){margin-left:1.3%;}
+.contents01 .con_promotion .vd_thum .container ul li:nth-child(1){display:block; margin-left:0;}
+.contents01 .con_promotion .vd_thum .container ul li:nth-child(2){display:block;}
+*/
+
+/* 뉴스룸 - 수상내역 */
+.award_main{padding:0 20px;}
+.award_main li{display:table; width:100%; margin-bottom:30px; padding-bottom:30px; overflow:hidden;}
+.award_main li:last-child{margin-bottom:50px;}
+.award_main .award_img{display:table-cell; width:300px;}
+.award_main .award_txt{display:table-cell; padding:0 0 0 30px; vertical-align:middle;}
+.award_main .award_txt dt:after{content:""; display:block; width:50px; height:1px; margin:20px 0; background:#464646;}
+.award_main .award_txt dd.award_date{margin-top:15px;}
+
+.award_list{width:calc(100% - 40px); padding:80px 20px;}
+
+/* 사회공헌활동 */
+.contents03{padding:0 20px;}
+.contents03 ul.board_cam{overflow:hidden;}
+.contents03 ul.board_cam li{float:left; width:48%; margin-right:3%;}
+.contents03 ul.board_cam li:nth-child(even){margin-right:0;}
+.contents03 ul.board_cam li:last-child{margin-bottom:0;}
+.contents03 ul.board_cam li:nth-last-child(2){margin-bottom:0;}
+.contents03 ul.board_cam li .cam_thum img{width:100%; max-width:578px;}
+.contents03 ul.board_cam li .cam_txt{padding:20px;}
+
+/* 이디야커피 연혁 */
+.history_wrap{padding-bottom:108px;}
+.contents01 h5.his_title{font-size:25px;}
+.contents01 ul.history_list{margin-top:60px;}
+.contents01 ul.history_list li{margin-bottom:50px;}
+.contents01 ul.history_list li.block_right dl dt{}
+.contents01 ul.history_list li.block_right dl dd{width:70%; padding-right:20px;}
+.contents01 ul.history_list li.block_left dl dt{}
+.contents01 ul.history_list li.block_left dl dd{width:70%; padding-left:20px;}
+.contents01 ul.history_list li h6{font-size:22px;}
+.contents01 ul.history_list li h6.year_right{left:-75px;}
+.contents01 ul.history_list li h6.year_left{right:-75px;}
+.contents01 ul.history_list li .his_img{display:block; width:25%; position:absolute;}
+.contents01 ul.history_list li .his_img_none{display:none;}
+.contents01 ul.history_list li .his_img img{width:100%; max-width:200px;}
+.contents01 ul.history_list li .his_img_right{right:-60%; top:0;}
+.contents01 ul.history_list li .his_img_left{left:-60%; top:0;}
+.contents01 ul.history_list li:nth-child(10) .his_img img{margin-top:-50px;}
+.contents01 ul.history_list li:nth-child(11) .his_img img{ margin-top:-50px;}
+.contents01 ul.history_list li:nth-child(12) .his_img img{margin-top:-90px;}
+.contents01 ul.con_txt li .con_txt01 p.p_gray{color:#908c82;}
+
+/* 이디야커피 - ceo 소개 */
+.contents01 .m_ceo_img{display:none;}
+.contents01 .ceo_img{display:block; width:40%; max-width:520px; margin:0 20px; float:left;}
+.contents01 .ceo_img img{width:100%;}
+.contents01 h5.ceo_title{margin:0 0 30px 0;}
+.contents01 .ceo_txt{padding:0 20px 0 0;}
+.contents01 .ceo_his{margin-top:50px;}
+.contents01 .ceo_his div{margin:0 20px}
+.contents01 .ceo_his div ul{width:48%; float:left; margin-left:4%;}
+.contents01 .ceo_his div ul:first-child{margin-bottom:0px; margin-left:0;}
+
+/* 이디야커피 - 오시는 길 */
+.contents01 .map{margin-bottom:50px;}
+.contents01 .map_intro01{margin-bottom:50px; padding:0 20px;}
+.contents01 .map_intro01 li span{width:110px; font-size:16px;}
+.contents01 .map_intro01 li p{font-size:14px;}
+.contents01 .map_intro02{display:table; padding:0 20px;}
+.contents01 .map_intro02 li{margin-bottom:30px; float:left; width:560px;}
+.contents01 .map_intro02 li img{margin-right:40px;}
+.contents01 .map_intro02 li span{font-size:15px;}
+.contents01 .map_intro02 li p{font-size:13px;}
+.wrap_map{height:620px !important;}
+
+/* 이디야연구소 R&D */
+.contents01 .rab_his{padding:0 20px;}
+.contents01 .barista_his{padding:0 20px; font-size:0;}
+.contents01 .barista_his li{display:inline-block; width:40%; margin-right:10%; vertical-align:top;}
+.contents01 .barista_his li:nth-child(even){margin-right:0;}
+
+/* 이디야연구소 아카데미 */
+.contents01 .m_con_academy{display:none;}
+.contents01 .con_academy{display:block; height:890px; background:url(../images/ediyarab/academy_step.png) no-repeat center; position:relative;}
+.contents01 .con_academy .aca_step_con{padding:20px; text-align:left; border:solid 1px #d9d9d9; width:28%; position:absolute; background:#FFF;}
+.contents01 .con_academy .aca_step_con01{top:30px; left:20px;}
+.contents01 .con_academy .aca_step_con02{top:150px; right:20px;}
+.contents01 .con_academy .aca_step_con03{top:380px; left:20px;}
+.contents01 .con_academy .aca_step_con04{top:730px; right:20px;}
+.contents01 .con_academy .aca_step_con dl{margin-bottom:20px;}
+.contents01 .con_academy .aca_step_con dl:last-child{margin-bottom:0;}
+.contents01 .con_academy .aca_step_con dl dt{color:#202023; font-size:15px; font-weight:500;}
+.contents01 .con_academy .aca_step_con dl dd{color:#464646; font-size:13px;}
+
+/* 프랜차이즈 faq */
+.board_faq{margin:0 20px;}
+
+/* 프랜차이즈 가맹안내 */
+.contents01 .office_phone_num{margin:0 20px; border:none; border-top:none; padding:0;}
+.contents01 .office_phone_num li{border:solid 1px #d9d9d9; border-top:solid 1px #002f6c; width:48%; float:left; margin-right:4%; padding:20px 0;}
+.contents01 .office_phone_num li:nth-child(even){margin-right:0;}
+.contents01 .office_phone_num li dl dt{display:block; width:auto; text-align:center; margin-bottom:15px; font-size:20px;}
+.contents01 .office_phone_num li dl dt span{display:inline-block;}
+.contents01 .office_phone_num li dl dd{display:block; width:125px; margin-left:0; margin:0 auto; font-size:20px;}
+.contents01 .open_graph{margin:30px 20px;}
+.contents01 .success_sys{margin:0 20px;}
+.contents01 .success_sys li{height:150px; border-bottom:none; overflow:hidden;}
+.contents01 .success_sys .sys_icon{width:130px;; margin-right:20px;}
+.contents01 .success_sys .sys_icon img{width:100%;}
+.contents01 .m_fran_step{display:none;}
+.contents01 .fran_step{display:block; margin:0 20px;}
+.contents01 .fran_step img{width:100%;}
+
+.hana_floating_bn{position:fixed; bottom:230px; left:auto; right:258px; margin-left:0; z-index:10;}
+
+/* 프랜차이즈 투자비용*/
+.contents01 .cost_table{padding:0 20px;}
+.contents01 .top_right_txt{margin-right:20px;}
+.contents01 .bot_left_txt{margin-left:20px;}
+.contents01 .cost_btn{padding:8px 0 5px 12px;}
+.contents01 .cost_calcul{padding:33px 20px 0;}
+.contents01 .cost_calcul h3 em{font-size:20px;}
+
+/* 프렌차이즈 가맹상담신청 */
+.contents01 .applli_con{padding:0 20px;}
+.contents01 .applli_con .applli_form{margin-top:50px;}
+.contents01 .applli_con .applli_form span.applli_em{float:right;}
+.contents01 .applli_con .applli_form table tr th{background:url(../images/franchise/ck_icon.png) no-repeat 40px center; background-color:#f5f5f5; width:18.5%; min-width:200px; max-width:200px;}
+.contents01 .applli_con .applli_form table tr th.icon_none{background:none; background-color:#f5f5f5;}
+.contents01 .applli_con .applli_form table tr th label{margin-left:65px;}
+.contents01 .applli_con .applli_form table tr td{padding:10px;}
+.contents01 .applli_con .applli_form table tr td input{width:173px; height:30px; box-sizing:border-box; margin:0; padding-left:5px;}
+.contents01 .applli_con .applli_form table tr td #user_hp1, #user_hp2, #user_hp3{width:78.3px;}
+.contents01 .applli_con .applli_form table tr td textarea{box-sizing:border-box; padding-left:5px;}
+.contents01 .applli_con .applli_form table tr td select{width:120px; height:30px; box-sizing:border-box; padding-left:5px;}
+.contents01 .applli_con .applli_form table tr td #area, #area_1, #area01, #area01_1, #area02, #area02_1{width:120px}
+.contents01 .applli_con .applli_form table tr td select:nth-child(2){margin-left:5px;}
+.contents01 .applli_con .applli_form table tr td #number{width:60px; margin:0 5px;}
+.contents01 .applli_con .applli_form table tr td #number:first-child{margin-left:0;}
+.contents01 .applli_con .applli_form table tr td #mail{margin-right:5px; width:120px;}
+.contents01 .applli_con .applli_form table tr td #mail_text{margin-left:5px; margin-right:5px; width:120px;}
+.contents01 .applli_con .applli_form table tr td #mail2{width:120px;}
+.contents01 .applli_con .applli_btn{width:328px;}
+.contents01 .applli_con .applli_btn div{width:160px}
+.contents01 .applli_con .applli_btn div a{width:160px;}
+.contents01 .applli_con .applli_btn .cancle_btn{margin-left:8px;}
+
+.contents01 .franchise_info{padding:0 20px; text-align:center;}
+.contents01 .franchise_info p{font-size:18px;}
+.contents01 .franchise_info span{font-size:18px;}
+.contents01 .franchise_info ul{width:410px; margin:20px auto 0;}
+.contents01 .franchise_info li{margin-bottom:8px; font-size:18px; text-align:left;}
+
+/* 창업설명회 안내 */
+.contents01 .info_add{margin:25px 20px 30px; padding:36px 20px; background:url(../images/franchise/info_add_bg.jpg) no-repeat #d1e2ea; background-size:cover;}
+.contents01 .info_add h3{font-size:24px;}
+.contents01 .info_add p{font-size:17px;}
+
+/* 드림팩토리 */
+.dream_txt{padding:0 20px 80px;}
+.produ_step{overflow:hidden;}
+.produ_step li{float:left; width:50%;}
+.produ_step li dd{width:250px;}
+
+.dream_movie{padding:80px 0 0; border-bottom:none;}
+
+.facility{position:relative; margin:80px 0; padding:0; border-top:none;}
+.facility .fac_btn{top:120px; right:35px;}
+.facility .fac_tt{position:absolute; right:0; width:280px; height:146px; padding:25px 35px; background:#FFF; text-align:left;}
+.facility .fac_tt dt:after{margin:20px 0 30px;}
+.dream_map{position:relative;}
+.map_info{text-align:left;}
+.map_info .map_tt{position:absolute; left:0; width:280px; padding:25px 35px 45px; background:#FFF; z-index:3;}
+.map_info .map_tt dt:after{margin:20px 0 30px;}
+.dream_map .map_wrap{height:500px;}
+
+.dream_safety .safety_li ul{display:table; margin:auto;}
+.dream_safety .safety_li li{float:left; width:48%; margin-right:4%;}
+.dream_safety .safety_li li:last-child{margin-right:0; margin-top:0;}
+.dream_safety .certifi_li{padding:60px 20px;}
+.dream_safety .certifi_li li{display:table; margin:auto;}
+.dream_safety .certifi_li li .img{float:left; max-width:180px; margin:0; margin-right:30px;}
+.dream_safety .certifi_li li dl{float:right; margin-top:60px; text-align:left;}
+.dream_safety .certifi_li li:last-child .img{float:right; margin-left:30px;}
+.dream_safety .certifi_li li:last-child dl{float:left; margin-top:35px; text-align:right;}
+
+/* 드림물류센터 */
+.dream_txt dd.dream_txt_li.center li{width:33.33%;}
+.dream_process{margin-bottom:80px;}
+.dream_keep{border-bottom:none; }
+.keep_list li dd p{width:250px;}
+}
+
+/* 980px 이상 해상도 */
+@media screen and (min-width:980px){
+/* 뉴스룸 - 수상내역 */
+.award_list{overflow:hidden;}
+.award_list li{float:right; width:calc(100% - 195px);}
+
+/* 이디야커피 - 회사소개 */
+.con_value .m_val_img{display:none;}
+.con_value .val_img{display:block; width:880px; margin:0 auto; padding:0 20px;}
+/* 이디야커피 - ceo 인사말 */
+.contents01 h5.ceo_title{font-size:30px; line-height:30px;}
+/* 이디야커피 - 회사소개 */
+.con_philosophy{display:table; width:100%; margin:0 auto;}
+.con_philosophy li{float:left; width:33.3%; margin-bottom:0;}
+/* 프랜차이즈 투자비용*/
+.contents01 .td_bdr_n{position:relative;}
+.contents01 .cost_btn{position:absolute; top:15px; right:10px; padding:0;}
+}
+
+/* 1200px 이상 해상도 */
+@media screen and (min-width:1200px){
+/* Common */
+.contents{padding:0 0 100px;}
+.contents01{width:1180px; margin:40px auto 100px; position:relative;}
+.contents02{margin:0px auto 100px;}
+.contents03{width:1180px; margin:40px auto 100px; position:relative;}
+.contents04{margin:100px 0 0;}
+
+.location{display:block; max-width:1180px; text-align:right; margin:0 auto; padding-top:33px; color:#898989; font-size:12px;}
+.location span{background:url(../images/common/icon_loc.png) right no-repeat; margin-right:8px; padding-right:15px;}
+
+.con_title{margin:0 0 30px 0;}
+.con_title h2{font-size:26px; }
+.con_title p{font-size:20px; font-weight:300; margin-top:22px;}
+.con_title05{width:1180px; margin:40px auto 30px;}
+
+.tab{position:absolute; top:0; right:0; margin-right:0;}
+.tab li{display:inline-block; height:38px; border:solid 1px #dcdad6; border-radius:19px; }
+.tab li:first-child{margin-left:0;}
+.tab li:last-child{margin-right:0;}
+.tab li a{display:block; width:158px; height:38px; border-radius:19px; text-align:center; line-height:38px; color:#898989;}
+.tab li:hover, .tab li.on{background:#003264; border:solid 1px #003264;}
+.tab li:hover a, .tab li.on a{color:#FFF;}
+
+.board_sch{float:right;margin-top:30px;}
+.contents01 ul.con_txt li{position:relative;}
+.contents01 ul.con_txt li:nth-child(3){margin-bottom:100px;}
+.contents01 ul.con_txt li .con_img_left{margin-left:0; padding-left:0;}
+.contents01 ul.con_txt li .con_line{margin:30px 0;}
+.contents01 ul.con_txt li .con_txt_left{position:absolute; bottom:50px; right:0; padding-right:0;}
+.contents01 ul.con_txt li .con_txt_left h5{font-size:20px; line-height:30px;}
+.contents01 ul.con_txt li .con_txt_left p{ margin-top:10px;}
+.contents01 ul.con_txt li .con_img_right{margin-right:0; padding-right:0;}
+.contents01 ul.con_txt li .con_line{ margin:30px 0;}
+.contents01 ul.con_txt li .con_txt_right{position:absolute; bottom:50px; left:0; padding-left:0;}
+.contents01 ul.con_txt li .con_txt_right h5{font-size:20px; line-height:30px;}
+.contents01 ul.con_txt li .con_txt_right p{ margin-top:10px;}
+.contents01 .con_bottom_line{margin:100px 0 50px; width:100%; height:1px; overflow:hidden;}
+
+/* Main */
+
+/* 뉴스룸 - 공지사항 */
+.con_title03{margin-top:40px;}
+.board_n li .board_notice{width:80px; }
+.board_n li .board_num{width:80px; }
+.board_n li .board_thum{padding-right:40px; }
+.board_n li .board_n_con {position:relative; }
+.board_n li .board_n_con h5 a{font-size:20px; font-weight:500; }
+.board_n li .board_n_con p:nth-child(2){height:60px; margin:30px 0 0;  overflow:hidden; text-overflow:ellipsis;}
+.board_n li .board_n_con p.btn_area{position:absolute; top:50%; right:20px; margin-top:-11px;}
+
+/* 공지사항-view */
+.board_e_img{width:40%; margin-right:2%; margin-bottom:0; }
+.board_e_con{width:45%; }
+.board_01 div.con_m{padding-top:70px;}
+.board_btn{width:60%; max-width:695px; margin-bottom:0; }
+.board_btn li{border-radius:3px; width:170px; line-height:40px;  padding:0; margin-left:0; background:#fff; border:1px solid #d9d9d9;}
+.board_btn li a{display:inline-block; width:100%; text-align:center; font-size:13px; }
+.board_btn li.on{background:#002f6c; border:none; }
+.board_btn li.on a{font-weight:500; color:#fff; }
+.board_e_state span{display:inline-block; }
+.board_e_state span:last-child{margin-right:0; }
+.board_e_img{width:500px; height:135px;  margin-right:40px; }
+.board_e_con{float:left; max-width:435px; padding-top:10px;}
+.board_e_con dt{margin-bottom:12px; font-size:20px;  white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.board_e_con dt a{ font-size:20px; }
+.board_e_con dd:nth-child(2){height:60px; }
+.board_e_con dd:nth-child(3){display:block; }
+.board_view_title{padding:24px 0;overflow:hidden; }
+.board_view_title p:nth-child(1){display:inline-block; width:79.7%; font-size:20px; margin-bottom:0; box-sizing:border-box;}
+.board_view_title p:nth-child(2){display:inline-block; width:20%; text-align:right;  box-sizing:border-box;  }
+.board_view_util{margin-top:70px; padding-top:20px; overflow:hidden; }
+.board_view_util a{margin-right:10px; }
+.board_view_page{padding:50px 0 0; }
+.board_view_page dl{line-height:60px;}
+.board_view_page dt , .board_view_page dd{float:left; }
+.board_view_page dt{width:80px; text-align:center; background:url(../images/common/board_veiw_bar.gif) no-repeat right center; }
+.board_view_page dd{width:940px; padding-left:50px;}
+.board_view_page dd:last-child{width:auto; padding-left:0; padding-right:20px; }
+.board_n li .board_notice{width:80px; }
+.board_n li .board_num{width:80px; }
+.board_n li .board_thum{padding-right:40px; }
+.board_n li .board_n_con {position:relative; }
+.board_n li .board_n_con h5 a{font-size:20px; font-weight:500; }
+.board_n li .board_n_con p:nth-child(2){height:60px; margin:30px 0 0;  overflow:hidden; text-overflow:ellipsis;}
+.board_n li .board_n_con p.btn_area{position:absolute; top:50%; right:20px; margin-top:-11px;}
+.board_top{top:120px; right:0;}
+
+/* 뉴스룸 - 홍보관 */
+/*
+.contents01 .con_promotion .vd_thum{width:100%;}
+.contents01 .con_promotion .vd_thum .container{width:100%;}
+.contents01 .con_promotion .vd_thum .container .vd_prev{float:left; width:10%; text-align:center; margin-top:7.5%;}
+.contents01 .con_promotion .vd_thum .container .vd_next{float:right; width:10%; text-align:center; margin-top:7.5%;}
+.contents01 .con_promotion .vd_thum .container ul{overflow:hidden; width:80%; float:left;}
+.contents01 .con_promotion .vd_thum .container ul li{width:49%; float:left; margin-left:2%; position:relative;}
+.contents01 .con_promotion .vd_thum .container ul li img{width:100%; max-width:250px; text-align:center;}
+.contents01 .con_promotion .vd_thum .container ul li:nth-child(3){margin-left:0;}
+.contents01 .con_promotion .vd_thum .container ul li:nth-child(1){display:none;}
+.contents01 .con_promotion .vd_thum .container ul li:nth-child(2){display:none;}
+.contents01 .con_promotion .vd_thum .container ul li img{width:100%;}
+.contents01 .con_promotion .vd_thum .container .vd_prev{width:15px; margin-right:45px; margin-top:92px;}
+.contents01 .con_promotion .vd_thum .container .vd_next{width:15px; margin-left:45px; margin-top:92px;}
+.contents01 .con_promotion .vd_thum .container ul{width:1060px;}
+.contents01 .con_promotion .vd_thum .container ul li{width:250px; height:205px; margin-left:20px;}
+.contents01 .con_promotion .vd_thum .container ul li:nth-child(3){margin-left:20px;}
+.contents01 .con_promotion .vd_thum .container ul li:nth-child(1){display:block; margin-left:0;}
+.contents01 .con_promotion .vd_thum .container ul li:nth-child(2){display:block;}
+.contents01 .con_promotion .vd_thum .container ul li p{display:block; position:absolute; padding:10px 0; width:100%; border:solid 1px #d9d9d9; box-sizing:border-box; border-top:none;}
+.contents01 .con_promotion .vd_thum .container ul li.vd_thum_on p{display:block; background:#002f6c; border:solid 1px #002f6c; width:100%; top:167px; color:#fff;}
+*/
+.contents01 .con_promotion{padding:0;}
+
+/* 뉴스룸 - 수상내역 */
+.award_main{width:1180px; margin:auto; padding:0;}
+.award_main li:last-child{margin-bottom:90px;}
+.award_main .award_img{width:430px;}
+.award_main .award_txt{padding:0 0 0 60px;}
+.award_main .award_txt dt{line-height:30px; font-size:20px;}
+.award_main .award_txt dt:after{margin:30px 0;}
+.award_main .award_txt dd.award_date{margin-top:20px;}
+
+.award_list{width:auto; padding:120px 0;}
+.award_list li{float:none; width:865px; padding-left:315px; margin:auto; background:url(../images/newsroom/award_bg.gif) repeat-y 420px;}
+.award_list li h6{font-size:30px; width:105px;}
+.award_list li div.aw_li{width:calc(100% - 105px);}
+.award_list li dl.award_title dt{margin:0 20px 0 20px;}
+.award_list li dl.award_con{width:calc(100% - 120px);}
+.award_list li dl.award_con dd.award_date{margin-top:20px;}
+
+/* 사회공헌활동 */
+.contents03 ul.board_cam li{float:left; width:578px; margin-right:20px;}
+.contents03 ul.board_cam li .cam_thum img{width:100%; max-width:578px;}
+.contents03 ul.board_cam li .cam_txt{padding:30px;}
+.contents03 ul.board_cam li .cam_txt a h5{font-size:18px; font-weight:500;}
+.contents03 ul.board_cam li .cam_txt a p{width:480px; margin-top:20px;}
+.contents03 ul.board_cam li .btn_view a{margin:0 30px 30px 0;}
+.board_01{padding:0;}
+
+/* 이디야커피 연혁 */
+.history_wrap{padding-bottom:280px;}
+.contents01 h5.his_title{font-size:30px; margin-top:2px;}
+.contents01 ul.history_list{margin-top:70px;}
+.contents01 ul.history_list li{margin-bottom:100px;}
+.contents01 ul.history_list li.block_right dl dt{margin:0 20px 0 20px;}
+.contents01 ul.history_list li.block_right dl dd{width:495px; padding-right:0;}
+.contents01 ul.history_list li.block_left dl dt{}
+.contents01 ul.history_list li.block_left dl dd{width:495px; padding-left:0;}
+.contents01 ul.history_list li h6{font-size:30px;}
+.contents01 ul.history_list li h6.year_right{left:-105px;}
+.contents01 ul.history_list li h6.year_left{right:-105px;}
+.contents01 ul.history_list li .his_img{display:block; width:100%; position:absolute;}
+.contents01 ul.history_list li .his_img_none{display:block;}
+.contents01 ul.history_list li .his_img img{width:100%; max-width:300px;}
+.contents01 ul.history_list li:first-child .his_img img{max-width:250px;}
+.contents01 ul.history_list li:nth-child(5) .his_img img{max-width:150px; margin-left:80px;}
+.contents01 ul.history_list li:nth-child(6) .his_img img{max-width:150px; margin-right:80px;}
+.contents01 ul.history_list li:nth-child(8) .his_img img{max-width:150px; margin-right:80px;}
+.contents01 ul.history_list li:nth-child(9) .his_img img{max-width:150px; margin-left:80px;}
+.contents01 ul.history_list li:nth-child(10) .his_img img{margin-top:-150px;}
+.contents01 ul.history_list li:nth-child(11) .his_img img{max-width:150px; margin-top:-50px; margin-left:80px;}
+.contents01 ul.history_list li:nth-child(12) .his_img img{max-width:120px; margin-top:-100px; margin-right:80px;}
+.contents01 ul.history_list li .his_img_right{right:-550px; top:20px;}
+.contents01 ul.history_list li .his_img_left{left:-550px; top:20px;}
+.contents01 ul.history_list li .his_img_none{top:-90px;}
+
+/* 이디야커피 - 회사소개 */
+.con_philosophy{width:90%;}
+
+/* 이디야커피 - ceo 소개 */
+.contents01 .ceo_img{width:520px; margin:0 70px 0 0;}
+.contents01 .ceo_txt{padding:0 20px 0 0;}
+.contents01 .ceo_his div{width:530px; margin:0; float:right;}
+.contents01 .ceo_his div ul{width:250px; margin-left:30px;}
+
+/* 이디야커피 - 오시는 길 */
+.contents01 .map_intro01{overflow:hidden;}
+.contents01 .map_intro01 li{float:left; width:50%;}
+
+/* 이디야연구소 R&D */
+.contents01 .rab_his{padding:0; margin-bottom:80px;}
+.contents01 .barista_his{padding:0;}
+.contents01 .barista_his ul{padding:30px 0; border:1px solid #d9d9d9;}
+.contents01 .barista_his li{width:50%; margin-right:0; margin-bottom:0;}
+.contents01 .barista_his li p{line-height:60px; padding-left:60px; font-size:16px;}
+.contents01 .barista_his li p:before{left:45px; top:30px;}
+
+/* 이디야연구소 아카데미 */
+.contents01 .con_spacial .spe_img{display:block;}
+.contents01 .con_spacial .m_spe_img{display:none;}
+.contents01 .con_academy .aca_step_con{padding:30px; width:370px;}
+.contents01 .con_academy .aca_step_con01{top:22px; left:0;}
+.contents01 .con_academy .aca_step_con02{top:125px; right:0;}
+.contents01 .con_academy .aca_step_con03{top:355px; left:0;}
+.contents01 .con_academy .aca_step_con04{top:715px; right:0;}
+.contents01 .con_academy .aca_step_con dl{margin-bottom:30px;}
+.contents01 .con_academy .aca_step_con dl dt{color:#202023; font-size:15px; font-weight:500;}
+.contents01 .con_academy .aca_step_con dl dd{color:#464646; font-size:13px;}
+
+/* 프랜차이즈 가맹안내 */
+.contents01 .office_phone_num{margin:0;}
+.contents01 .office_phone_num li{width:280px; margin-bottom:0; margin-right:20px; padding:30px 0;}
+.contents01 .office_phone_num li:nth-child(even){margin-right:20px;}
+.contents01 .office_phone_num li:last-child{margin-right:0;}
+.contents01 .office_phone_num li dl dt{margin-bottom:20px;}
+.contents01 .office_phone_num li dl dd{margin-left:0; margin:0 auto;}
+.contents01 .open_graph{margin:30px 0 0 0;}
+.contents01 .success_sys{margin:0; overflow:hidden;}
+.contents01 .success_sys li{width:540px; float:left; padding-right:50px; margin-bottom:50px;}
+.contents01 .success_sys li:nth-child(5){margin-bottom:0;}
+.contents01 .success_sys li:last-child{margin-bottom:0;}
+.contents01 .success_sys .sys_txt h6{line-height:15px;}
+.contents01 .fran_step{margin:0;}
+.contents01 .fran_step img{width:100%;}
+
+.hana_floating_bn{left:80px; bottom:240px; right:auto;}
+
+/* 프렌차이즈 투자비용 */
+.contents01 .cost_table{padding:0;}
+.contents01 .top_right_txt{margin-right:0;}
+.contents01 .bot_left_txt{margin-left:0;}
+.contents01 .cost_calcul{padding:43px 0 0;}
+.contents01 .cost_calcul h3 em{font-size:22px;}
+
+/* 프랜차이즈 faq */
+.board_faq{margin:0;}
+.board_faq li .board_q{padding:0;}
+.board_faq li .board_q dt,
+.board_faq li .board_q dd:nth-child(3){padding-top:0; line-height:60px; height:60px;}
+.board_faq li .board_q dt {width:3.38%; padding-left:40px; font-size:24px; text-align:left; }
+.board_faq li .board_q dd:nth-child(2){width:85.5%; line-height:60px; height:60px;}
+.board_faq li .board_q dd:nth-child(3) {width:7.62%;}
+.board_faq li .board_a{padding:27px 40px; }
+.board_faq li .board_a dt , .board_faq li .board_a dd{float:left; }
+.board_faq li .board_a dt {width:3.38%; text-align:left;  font-size:24px;}
+.board_faq li .board_a dd {width:80%; }
+
+.contents01 .fnq_list li{ margin:0;}
+.contents01 .fnq_list li .fnq_q a{background:url(../images/franchise/q_icon.png) no-repeat 40px center; padding:20px 210px 20px 80px; color:#002f6c;}
+.contents01 .fnq_list li .fnq_q a .fnq_list_on{background:url(../images/franchise/fnq_list_on.gif) no-repeat; width:10px; height:6px; display:block; float:right; margin:8px -170px 0 0;}
+.contents01 .fnq_list li .fnq_q_off a{background:url(../images/franchise/q_icon.png) no-repeat 40px center; padding:20px 210px 20px 80px; color:#464646;}
+.contents01 .fnq_list li .fnq_q_off a .fnq_list_off{background:url(../images/franchise/fnq_list_off.gif) no-repeat; width:10px; height:6px; display:block; float:right; margin:8px -170px 0 0;}
+.contents01 .fnq_list li .fnq_a{background:url(../images/franchise/a_icon.png) no-repeat 40px 25px; padding:20px 210px 20px 80px;border-bottom:solid 1px #d9d9d9; background-color:#f5f5f5; color:#464646;}
+
+/* 프렌차이즈 가맹상담신청 */
+.contents01 .applli_con{padding:0;}
+.contents01 .applli_con .agree_wrap .agr_box{height:140px; padding:30px;}
+.contents01 .applli_con .applli_form table tr td input{width:280px; height:35px;}
+.contents01 .applli_con .applli_form table tr td select{width:210px; height:35px; padding-left:15px;}
+.contents01 .applli_con .applli_form table tr td #number{width:130px;}
+.contents01 .applli_con .applli_form table tr td #mail{width:200px; margin-right:5px;}
+.contents01 .applli_con .applli_form table tr td #mail_text{width:200px;}
+.contents01 .applli_con .applli_form table tr td #mail02{width:199px; margin-left:5px;}
+.contents01 .applli_con .applli_form table tr td #brand{width:210px;}
+.contents01 .applli_con .applli_form table tr td #user_hp1, #user_hp2, #user_hp3{width:130px;}
+.contents01 .applli_con .applli_form table tr td #user_hp1, #user_hp2, #user_hp3{margin:0 5px;}
+.contents01 .applli_con .applli_form table tr td #user_hp1{margin-left:0;}
+.contents01 .applli_con .applli_form table tr td #area, #area_1, #area01, #area01_1, #area02, #area02_1{width:211px}
+.contents01 .applli_con .applli_form table tr td #mail2{width:200px;}
+.contents01 .applli_con .applli_btn{margin-top:50px;}
+.contents01 .applli_con .applli_form table tr td p.phone_txt{margin-left:20px; display:inline-block; margin-top:0;}
+.contents01 .franchise_info{margin:65px 0;}
+.contents01 .franchise_info p{font-size:20px;}
+.contents01 .franchise_info span{font-size:20px;}
+.contents01 .franchise_info ul{width:410px; margin:20px auto 0;}
+.contents01 .franchise_info li{margin-bottom:8px; font-size:18px; text-align:left;}
+
+/* 창업설명회 안내 */
+.contents01 .info_add{margin:25px 0 30px; padding:38px 20px;}
+.contents01 .info_add h3{font-size:32px;}
+.contents01 .info_add h3:after{margin:15px auto 20px;}
+.contents01 .info_add p{font-size:20px;}
+.contents01 .info_btn{margin:30px auto 0;}
+
+/* 드림팩토리 */
+.dream_txt{width:1180px; margin:auto; padding:0 0 120px;}
+.dream_txt .dt{font-size:30px;}
+.dream_txt .dt:after{width:30px; height:4px; margin:25px auto 35px;}
+.dream_txt .dd span{display:block;}
+.dream_txt dd.dream_txt_li{padding:30px 50px; margin-bottom:0;}
+.dream_txt dd.dream_txt_li li{width:25%;}
+.dream_txt dd.dream_txt_li li dl{width:190px; height:130px; padding-top:60px; border-radius:100px;}
+.dream_txt dd.dream_txt_li li dt{font-size:17px;}
+.dream_txt dd.dream_txt_li li dd{font-size:30px;}
+
+.dream_machine{padding:100px 0 80px; background:url(../images/dream/machine_bg.jpg) no-repeat #173466;}
+.dream_movie{padding:120px 0; border-bottom:1px solid #dddddd;}
+.dream_movie .dr_movie_tt dt{font-size:30px;}
+.dream_movie .dr_movie_tt dt:after{width:30px; height:4px; margin:25px auto 50px;}
+.factory_tt dt{font-size:30px;}
+.factory_tt dt:after{width:30px; height:4px; margin:25px auto 50px;}
+.machine_list{width:1180px; margin:auto;}
+.machine_list li{overflow:hidden; margin-bottom:100px;}
+.machine_list li:first-child .machine_img{float:left; width:590px;}
+.machine_list li:first-child .machine_info{float:right; width:490px; margin:25px 0 0 100px;}
+.machine_list li:last-child .machine_img{float:right; width:590px;}
+.machine_list li:last-child .machine_info{float:left; width:490px; margin:25px 100px 0 0;}
+.machine_list li .machine_info dt{font-size:20px;}
+.machine_list li .machine_info dt p{font-size:25px; font-weight:500; opacity:0.7;}
+.machine_list li .machine_info dd.machine_btn{float:none; margin-top:60px;}
+
+.dream_safety{padding:100px 0;}
+.dream_safety .safety_li ul{width:1180px; margin-top:60px;}
+.dream_safety .safety_li p{margin-top:40px; font-size:20px;}
+.dream_safety .certifi_li{margin:80px auto 0; padding:80px 20px; width:1180px;}
+.dream_safety .certifi_li li .img{max-width:250px; margin-right:60px;}
+.dream_safety .certifi_li li dl{margin-top:120px;}
+.dream_safety .certifi_li li dd{margin-top:10px;}
+.dream_safety .certifi_li li:last-child .img{max-width:280px; margin-left:60px;}
+.dream_safety .certifi_li li:last-child dl{margin-top:90px;}
+
+.produ_process{padding:100px 0 80px;}
+.produ_step{width:1320px; margin:auto; background:url(../images/dream/produ_step_bg.png) no-repeat center 152px;}
+.produ_step li{width:330px;}
+.produ_step li .step_num{width:35px; height:35px; line-height:35px; border-radius:20px; font-size:17px; margin:15px auto 30px;}
+.produ_step li dt{font-size:20px;}
+.produ_step li dd{margin:10px auto;}
+
+.facility{width:1180px; margin:120px auto}
+.facility .fac_btn{top:145px; right:0;}
+.facility .fac_btn li{margin-left:10px;}
+.facility .fac_btn li a{width:75px; height:75px;}
+.facility .fac_tt{width:350px; height:190px; padding:30px 0 40px 60px;}
+.facility .fac_tt dt{font-size:30px;}
+.facility .fac_tt dt:after{width:30px; height:4px; margin:25px 0 35px;}
+.facility .fac_img img{width:880px;}
+/*
+.fac_info{width:430px; padding:30px 0 40px 60px;}
+.fac_info .fac_tt dt{font-size:30px;}
+.fac_info .fac_tt dt:after{width:30px; height:4px; margin:25px 0 35px;}
+.fac_info .fac_btn{margin-top:-50px;}
+.fac_info .fac_btn li a{width:75px; height:75px;}
+*/
+.dream_map .map_wrap{height:750px;}
+.map_info{position:relative; width:1180px; margin:auto; padding:0;}
+.map_info .map_tt{width:300px; padding:30px 60px 70px;}
+.map_info .map_tt dt{font-size:30px;}
+.map_info .map_tt dt:after{width:30px; height:4px; margin:25px 0 35px;}
+.map_info .map_tt dd.call{margin-bottom:10px; font-size:25px;}
+
+/* 드림물류센터 */
+.dream_process{padding:100px 0 80px; margin-bottom:120px;}
+.process_tt dt{font-size:30px;}
+.process_tt dt:after{width:30px; height:4px; margin:25px auto 50px;}
+.dream_step{width:1180px; height:600px; background:url(../images/dream/step_bg.gif) no-repeat;}
+.dream_step dt{margin-top:25px; font-size:20px;}
+.dream_step li{width:200px; margin-bottom:40px;}
+.dream_step li.right{float:right;}
+.dream_step li:first-child{margin-left:150px;}
+.dream_step li:nth-child(4n){display:block;}
+.dream_step li:nth-child(6n){display:none;}
+.dream_step li.m_right{margin-right:150px;}
+.dream_step li.step_line{display:block; width:140px; height:230px; margin-top:48px; background:none;}
+.dream_step dd img{width:200px;}
+.dream_step dt em{font-size:20px;}
+.keep_tt{margin-bottom:50px;}
+.keep_tt dt{font-size:30px;}
+.keep_tt dt:after{width:30px; height:4px; margin:25px auto 35px;}
+.keep_tt dd{font-size:20px;}
+.keep_list{width:1080px; margin:80px auto; overflow:hidden;}
+.keep_list li{float:left; width:360px; margin-bottom:70px;}
+.keep_list li.m_left{margin-left:180px;}
+.keep_list li dd{margin-top:25px;}
+.keep_list li dd span{font-size:20px; font-weight:900;}
+.keep_list li dd p{margin:10px auto;}
+
+/* 드림팩토리 팝업 */
+.dream_pop .pop_con{padding:40px 55px;}
+.dream_pop .pop_con dt{font-size:20px;}
+.dream_pop .pop_con dt p{font-size:25px; font-weight:500; opacity:0.7;}
+}

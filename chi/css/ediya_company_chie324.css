@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+@import url(../../../../fonts.googleapis.com/earlyaccess/notosanssc.css);
+/* 폰트 Weight ExL 100, L 300, R 400, M 500, B 700, H 900 */
+
+.gnb.chi nav:hover:after{height:225px;}
+.top_fixed .gnb.chi nav:hover:after{height:265px;}
+
+.gnb.chi .main{margin-left:-349px;}
+
+.gnb.chi .main li a,
+.main_block.lang_chi p.info_add,
+.fran_contact.chi dt,
+.fran_info.chi li dt,
+.dream_factory .factory_con.lang_chi p,
+.sub_visual.chi h1.con_tt,
+.sub_visual.chi .visual_txt,
+.sub_visual.chi .visual_mt,
+.rental_app.chi .rental_app_info li a{font-family:'Noto Sans SC', sans-serif;}
+
+#contentWrap.lang_chi,
+.camp_box.chi p,
+.beanist_product.chi li dl{word-break:break-all;}
+
+footer.chi .copy_info{max-width:600px;}
+
+.contents01.chi ul.con_txt li .con_txt_left p,
+.contents01.chi ul.con_txt li .con_txt_right p{font-size:14px;}
+
+.con_philosophy.chi li .phil_txt{width:80%; margin:auto;}
+
+.tab.chi{width:96%; min-width:96%; margin:0 auto 20px;}
+.tab.chi li{width:100%; max-width:100%; margin:0 0 5px;}
+
+.contents01.chi .office_phone_num li{width:240px;}
+.contents01.chi .office_phone_num li dl dd{margin-left:80px;}
+
+.cost_table.chi .cost_btn a{width:180px; background-position:175px 9px;}
+
+h3.sub_tt{padding:0 20px; margin-bottom:10px; font-size:16px; font-weight:500;}
+p.sub_txt{padding:0 20px; font-size:14px; margin-bottom:30px;}
+p.sub_txt em{font-weight:700; display:block; margin-bottom:-30px;}
+.brand_li{padding:0 20px; margin-bottom:30px;}
+.brand_li li{margin-bottom:10px; font-size:14px;}
+.brand_table{width:calc(100% - 40px); margin:0 20px 30px;}
+.brand_table thead th{background:#f5f5f5; padding:10px 10px;}
+.brand_table thead tr th:first-child{width:100px;}
+.brand_table tbody tr{border-bottom:1px solid #ddd;}
+.brand_table tbody tr td:first-child{text-align:center; }
+.brand_table tbody td{padding:10px 10px;}
+.bnst_con{padding:0 20px 30px; margin-bottom:30px; border:1px solid #ddd;}
+
+/* 640px 이상 해상도 */
+@media screen and (min-width:640px){
+.tab.chi{width:98%; min-width:98%; text-align:left; margin:0 auto 20px;}
+.tab.chi li{width:33%; max-width:33%;}
+.tab.chi li a{width:100%;}
+
+.map_intro02.chi li{width:96%;}
+
+.contents01.chi .office_phone_num li{width:32%;}
+.contents01.chi .office_phone_num li dl dd{margin-left:0; margin:0 auto;}
+
+.contents01.chi .con_academy{background:url(../images/ediyarab/academy_step.png) no-repeat center;}
+
+h3.sub_tt{margin-bottom:20px; font-size:18px;}
+p.sub_txt{font-size:16px; margin-bottom:40px;}
+p.sub_txt em{margin-bottom:-40px;}
+.brand_li{margin-bottom:40px;}
+.brand_li li{font-size:16px;}
+.brand_table thead th{padding:15px 15px; font-size:16px;}
+.brand_table thead tr th:first-child{width:150px;}
+.brand_table tbody td{padding:15px 15px; font-size:16px;}
+.bnst_con{margin-bottom:40px;}
+}
+
+/* 980px 이상 해상도 */
+@media screen and (min-width:980px){
+}
+
+/* 1180px 이상 해상도 */
+@media screen and (min-width:1180px){
+/*.gnb.chi .main li a{padding:0 53px;}
+.gnb.chi .main > li:last-child a{padding:0 0 0 53px;}
+.gnb.chi .main > li:last-child .sub > li a{padding:0 0 0 53px;}*/
+.gnb.chi .main > li:nth-child(5) .sub > li{width:200%;}
+
+.tab.chi{width:60%; min-width:60%;}
+
+.map_intro02.chi li{width:47%; padding-right:3%;}
+
+}

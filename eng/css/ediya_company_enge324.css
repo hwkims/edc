@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+.gnb.eng nav:hover:after{height:225px;}
+.top_fixed .gnb.eng nav:hover:after{height:265px;}
+
+.sub_visual.eng h1.con_tt.long_tt{width:90%; padding:30px 0 19px; margin:auto;}
+
+footer .copy_info.chi{max-width:720px;}
+
+.main_tt.eng em{line-height:1.1em;}
+
+.fran_contact.eng dt{width:50%; font-size:18px;}
+.fran_contact.eng dd{width:50%; font-size:18px;}
+
+.tab.eng li{width:96%; max-width:96%; margin:0 0 5px;}
+
+.con_philosophy.eng li .phil_txt{width:90%; margin:auto;}
+
+.success_sys.eng .sys_txt h6{line-height:1.2em;}
+.success_sys.eng .sys_txt{ display:table; height:auto;}
+.success_sys.eng li{height:auto; margin-bottom:10px;}
+
+.office_phone_num.eng li{width:100%; display:table;}
+.office_phone_num.eng li dl dt{font-size:17px; width:42%;}
+.office_phone_num.eng li dl dd{float:left; font-size:18px; margin-left:0;}
+
+.m_fran_step.eng{background:none; width:90%; height:auto; position:relative; margin:auto;}
+.m_fran_step.eng .fr_stp{position:relative; width:auto; background-color:#none; padding:0 0 30px 65px; border:none;}
+.m_fran_step.eng .fr_stp dt{font-size:15px; color:#202023; font-weight:500;}
+.m_fran_step.eng .fr_stp dd{font-size:13px; color:#202023;}
+.m_fran_step.eng .fr_stp01{left:auto; top:auto; text-align:left; background:url(../images/franchise/m_fran_step01.png) no-repeat;}
+.m_fran_step.eng .fr_stp02{right:auto; top:auto; background:url(../images/franchise/m_fran_step02.png) no-repeat;}
+.m_fran_step.eng .fr_stp03{left:auto; top:auto; text-align:left; background:url(../images/franchise/m_fran_step03.png) no-repeat;}
+.m_fran_step.eng .fr_stp04{right:auto; top:auto; background:url(../images/franchise/m_fran_step04.png) no-repeat;}
+.m_fran_step.eng .fr_stp05{left:auto; top:auto; text-align:left; background:url(../images/franchise/m_fran_step05.png) no-repeat;}
+.m_fran_step.eng .fr_stp06{right:auto; top:auto; background:url(../images/franchise/m_fran_step06.png) no-repeat;}
+.m_fran_step.eng .fr_stp07{left:auto; top:auto; text-align:left; background:url(../images/franchise/m_fran_step07.png) no-repeat;}
+.m_fran_step.eng .fr_stp08{right:auto; top:auto; background:url(../images/franchise/m_fran_step08.png) no-repeat #FFF;}
+.m_fran_step.eng:after{position:absolute; top:0; content:""; display:block; width:15px; height:100%; background:url(../images/franchise/m_fran_step_line.gif); background-size:100% 100%; z-index:-1; left:18px;}
+
+.cost_table.eng{width:100%; overflow-x:scroll; box-sizing:border-box;}
+.cost_table.eng table{width:640px; word-break:keep-all;}
+.cost_table.eng .cost_btn a{ width:180px; background-position:175px 9px;}
+
+.dream_factory.eng .factory_con .df_btn.main_btn a{width:240px;}
+.dream_txt dd.dream_txt_li li{vertical-align:top;}
+
+/* 640px 이상 해상도 */
+@media screen and (min-width:640px){
+.sub_visual.eng .visual_txt{width:90%;}
+.sub_visual.eng .visual_txt .block_txt{display:inline;}
+
+.tab.eng{width:98%; min-width:auto; text-align:left; margin:0 auto 20px;}
+.tab.eng li{width:24%; max-width:33%; margin:0 0;}
+.tab.eng li a{width:100%;}
+
+.map_intro02.eng li{width:96%;}
+
+.success_sys.eng li{margin-bottom:30px;}
+
+.office_phone_num.eng li{width:48%; display:block;}
+.office_phone_num.eng li dl dt{font-size:20px; width:auto;}
+.office_phone_num.eng li dl dd{float:none; font-size:20px; margin:0 auto;}
+
+.cost_table.eng{overflow:hidden;}
+.cost_table.eng table{width:100%;}
+
+.contents01.eng .m_con_academy{display:block;}
+.contents01.eng .con_academy{display:none;}
+}
+
+/* 980px 이상 해상도 */
+@media screen and (min-width:980px){
+.sub_visual.eng h1.con_tt.long_tt{padding:60px 0 19px;}
+.sub_visual.eng .visual_txt .block_txt{display:block;}
+
+.fran_info.eng dt{height:40px}
+.fran_info.eng dd{width:90%; margin:15px auto 0;}
+
+.contents01.eng .m_con_academy{display:none;}
+.contents01.eng .con_academy{display:block; background:url(../images/ediyarab/academy_step.png) no-repeat center;}
+
+.rental_app.eng .rental_app_info dd{height:140px; border-bottom:1px solid #b2b2b2;}
+.rental_app.eng .rental_app_info dl:first-child dd{padding-top:40px;}
+}
+
+/* 1180px 이상 해상도 */
+@media screen and (min-width:1180px){
+.sub_visual.eng h1.con_tt.long_tt{width:720px; padding:86px 0 19px;}
+.gnb.eng .sub > li{width:210px;}
+
+.fran_info.eng dd{width:100%;}
+
+.tab.eng{width:60%;}
+
+.ceo_his.eng div ul.ceo_profile li:first-child{padding-bottom:32px}
+
+.map_intro02.eng li{width:47%; padding-right:3%;}
+
+.success_sys.eng li{height:220px;}
+.success_sys.eng li:nth-child(5),
+.success_sys.eng li:nth-child(6){height:auto; margin-bottom:0;}
+
+.contents01 ul.con_txt li .con_txt_left.long_txt01{bottom:30px;}
+
+.rental_app.eng .rental_app_info dl:first-child{width:380px; margin-right:20px;}
+.rental_app.eng .rental_app_info dl.se_dl{width:calc(100% - 400px); margin:0;}
+.rental_app.eng .rental_app_info dd{height:125px;}
+.rental_app.eng .rental_app_info dl:first-child dd{padding-top:30px;}
+}
+
+/* 1200px 이상 해상도 */
+@media screen and (min-width:1200px){
+.dream_txt dd.dream_txt_li li dd.eng{font-size:22px;}
+.office_phone_num.eng li{width:280px; margin-bottom:0; margin-right:20px; padding:30px 0;}
+}

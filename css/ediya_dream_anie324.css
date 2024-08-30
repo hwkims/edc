@@ -1,0 +1,253 @@
+@charset "utf-8";
+/* CSS Document */
+
+.dream_step span{display:block; position:absolute;}
+.dream_step span.step01_img{width:28%; top:55%; left:24%;}
+.dream_step.fadeInDown span.step01_img{
+	      animation:step01_img 24s ease-in-out infinite;
+-webkit-animation:step01_img 24s ease-in-out infinite;
+				animation-delay:0.5s;
+-webkit-animation-delay:0.5s;}
+@keyframes step01_img{
+0%{transform:translateX(0); opacity:1;}
+2.5%{transform:translateX(0); opacity:1;}
+5%{transform:translateX(89.28%); opacity:0;}
+5.1%{transform:translateX(-71.42%); opacity:0;}
+5.2%{transform:translateX(-71.42%); opacity:1;}
+9%{transform:translateX(0); opacity:1;}
+11.5%{transform:translateX(0); opacity:1;}
+14%{transform:translateX(89.28%); opacity:0;}
+14.1%{transform:translateX(-71.42%); opacity:0;}
+14.2%{transform:translateX(-71.42%); opacity:1;}
+16.66%{transform:translateX(0); opacity:1;}
+100%{transform:translateX(0); opacity:1;}
+}
+@-webkit-keyframes step01_img{
+0%{-webkit-transform:translateX(0); opacity:1;}
+2.5%{-webkit-transform:translateX(0); opacity:1;}
+5%{-webkit-transform:translateX(89.28%); opacity:0;}
+5.1%{-webkit-transform:translateX(-71.42%); opacity:0;}
+5.2%{-webkit-transform:translateX(-71.42%); opacity:1;}
+9%{-webkit-transform:translateX(0); opacity:1;}
+11.5%{-webkit-transform:translateX(0); opacity:1;}
+14%{-webkit-transform:translateX(89.28%); opacity:0;}
+14.1%{-webkit-transform:translateX(-71.42%); opacity:0;}
+14.2%{-webkit-transform:translateX(-71.42%); opacity:1;}
+16.66%{-webkit-transform:translateX(0); opacity:1;}
+100%-webkit-{transform:translateX(0); opacity:1;}
+}
+.dream_step span.step02_img{width:22.5%; top:43.5%; left:56%;}
+.dream_step.fadeInDown span.step02_img{
+	      animation:step02_img 24s ease-in-out infinite;
+-webkit-animation:step02_img 24s ease-in-out infinite;
+				animation-delay:4.5s;
+-webkit-animation-delay:4.5s;}
+@keyframes step02_img{
+0%{transform:translate(0 , 0);}
+2%{transform:translate(-22.22% , -16.12%) rotate(-20deg);}
+4%{transform:translate(-22.22% , 0) rotate(0deg);}
+6%{transform:translate(0 , 0);}
+11%{transform:translate(0 , 0);}
+13%{transform:translate(-22.22% , -16.12%) rotate(-20deg);}
+15%{transform:translate(-22.22% , 0) rotate(0deg);}
+16.66%{transform:translate(0 , 0);}
+100%{transform:translate(0 , 0);}
+}
+@-webkit-keyframes step02_img{
+0%{-webkit-transform:translate(0 , 0);}
+2%{-webkit-transform:translate(-22.22% , -16.12%) rotate(-20deg);}
+4%{-webkit-transform:translate(-22.22% , 0) rotate(0deg);}
+6%{-webkit-transform:translate(0 , 0);}
+11%{-webkit-transform:translate(0 , 0);}
+13%{-webkit-transform:translate(-22.22% , -16.12%) rotate(-20deg);}
+15%{-webkit-transform:translate(-22.22% , 0) rotate(0deg);}
+16.66%{-webkit-transform:translate(0 , 0);}
+100%{-webkit-transform:translate(0 , 0);}
+}
+.dream_step span.step03_img01{width:25%; top:59.5%; left:37.5%;}
+.dream_step.fadeInDown span.step03_img01{
+	      animation:step03_img01 24s ease-in-out infinite;
+-webkit-animation:step03_img01 24s ease-in-out infinite;
+				animation-delay:8.5s;
+-webkit-animation-delay:8.5s;}
+@keyframes step03_img01{
+0%{transform:translateY(0);}
+3%{transform:translateY(0); opacity:0;}
+3.1%{transform:translateY(-90%); opacity:0;}
+6%{transform:translateY(0); opacity:1;}
+10%{transform:translateY(0); opacity:1;}
+13%{transform:translateY(0); opacity:0;}
+13.1%{transform:translateY(-90%); opacity:0;}
+16%{transform:translateY(0); opacity:1;}
+16.66%{transform:translateY(0);}
+100%{transform:translateY(0);}
+}
+@-webkit-keyframes step03_img01{
+0%{-webkit-transform:translateY(0);}
+3%{-webkit-transform:translateY(0); opacity:0;}
+3.1%{-webkit-transform:translateY(-90%); opacity:0;}
+6%{-webkit-transform:translateY(0); opacity:1;}
+10%{-webkit-transform:translateY(0); opacity:1;}
+13%{-webkit-transform:translateY(0); opacity:0;}
+13.1%{-webkit-transform:translateY(-90%); opacity:0;}
+16%{-webkit-transform:translateY(0); opacity:1;}
+16.66%{-webkit-transform:translateY(0);}
+100%{-webkit-transform:translateY(0);}
+}
+.dream_step span.step03_img02{width:22%; top:52%; left:39%;}
+.dream_step.fadeInDown span.step03_img02{
+	      animation:step03_img02 24s ease-in-out infinite;
+-webkit-animation:step03_img02 24s ease-in-out infinite;
+				animation-delay:8.5s;
+-webkit-animation-delay:8.5s;}
+@keyframes step03_img02{
+0%{transform:translateY(0);}
+3%{transform:translateY(0); opacity:0;}
+4.1%{transform:translateY(-90%); opacity:0;}
+7%{transform:translateY(0); opacity:1;}
+10%{transform:translateY(0); opacity:1;}
+13%{transform:translateY(0); opacity:0;}
+14.1%{transform:translateY(-90%); opacity:0;}
+16.65%{transform:translateY(0); opacity:1;}
+16.66%{transform:translateY(0);}
+100%{transform:translateY(0);}
+}
+@-webkit-keyframes step03_img02{
+0%{-webkit-transform:translateY(0);}
+3%{-webkit-transform:translateY(0); opacity:0;}
+4.1%{-webkit-transform:translateY(-90%); opacity:0;}
+7%{-webkit-transform:translateY(0); opacity:1;}
+11%{-webkit-transform:translateY(0); opacity:1;}
+13%{-webkit-transform:translateY(0); opacity:0;}
+14.1%{-webkit-transform:translateY(-90%); opacity:0;}
+16.65%{-webkit-transform:translateY(0); opacity:1;}
+16.66%{-webkit-transform:translateY(0);}
+100%{-webkit-transform:translateY(0);}
+}
+.dream_step span.step04_img{width:18.5%; top:29%; left:42%;}
+.dream_step.fadeInDown span.step04_img{
+	      animation:step04_img 24s ease-in-out infinite;
+-webkit-animation:step04_img 24s ease-in-out infinite;
+				animation-delay:12.5s;
+-webkit-animation-delay:12.5s;}
+@keyframes step04_img{
+0%{transform:translateY(0);}
+3%{transform:translateY(0); opacity:0;}
+3.1%{transform:translateY(-80%); opacity:0;}
+6%{transform:translateY(0); opacity:1;}
+10%{transform:translateY(0); opacity:1;}
+13%{transform:translateY(0); opacity:0;}
+13.1%{transform:translateY(-80%); opacity:0;}
+16%{transform:translateY(0); opacity:1;}
+16.66%{transform:translateY(0);}
+100%{transform:translateY(0);}
+}
+@-webkit-keyframes step04_img{
+0%{-webkit-transform:translateY(0);}
+3%{-webkit-transform:translateY(0); opacity:0;}
+3.1%{-webkit-transform:translateY(-80%); opacity:0;}
+6%{-webkit-transform:translateY(0); opacity:1;}
+10%{-webkit-transform:translateY(0); opacity:1;}
+13%{-webkit-transform:translateY(0); opacity:0;}
+13.1%{-webkit-transform:translateY(-80%); opacity:0;}
+16%{-webkit-transform:translateY(0); opacity:1;}
+16.66%{-webkit-transform:translateY(0);}
+100%{-webkit-transform:translateY(0);}
+}
+.dream_step span.step05_img{width:23.5%; top:50%; left:49%;}
+.dream_step.fadeInDown span.step05_img{
+	      animation:step05_img 24s ease-in-out infinite;
+-webkit-animation:step05_img 24s ease-in-out infinite;
+				animation-delay:16.5s;
+-webkit-animation-delay:16.5s;}
+@keyframes step05_img{
+0%{transform:translateX(0);}
+3%{transform:translateX(0); opacity:0;}
+3.1%{transform:translateX(50%); opacity:0;}
+6%{transform:translateX(0); opacity:1;}
+10%{transform:translateX(0); opacity:1;}
+13%{transform:translateX(0); opacity:0;}
+13.1%{transform:translateX(50%); opacity:0;}
+16%{transform:translateX(0); opacity:1;}
+16.66%{transform:translateX(0);}
+100%{transform:translateX(0);}
+}
+@-webkit-keyframes step05_img{
+0%{-webkit-transform:translateX(0);}
+3%{-webkit-transform:translateX(0); opacity:0;}
+3.1%{-webkit-transform:translateX(50%); opacity:0;}
+6%{-webkit-transform:translateX(0); opacity:1;}
+10%{-webkit-transform:translateX(0); opacity:1;}
+13%{-webkit-transform:translateX(0); opacity:0;}
+13.1%{-webkit-transform:translateX(50%); opacity:0;}
+16%{-webkit-transform:translateX(0); opacity:1;}
+16.66%{-webkit-transform:translateX(0);}
+100%{-webkit-transform:translateX(0);}
+}
+.dream_step span.step06_img01{width:47%; top:35.5%; left:28%;}
+.dream_step.fadeInDown span.step06_img01{
+	      animation:step06_img01 24s ease-in-out infinite;
+-webkit-animation:step06_img01 24s ease-in-out infinite;
+				animation-delay:20.5s;
+-webkit-animation-delay:20.5s;}
+@keyframes step06_img01{
+0%{transform:translateY(0);}
+1%{transform:translateY(0);}
+2%{transform:translateY(-10%);}
+3%{transform:translateY(0);}
+4%{transform:translateY(-12%);}
+5%{transform:translateY(0);}
+11%{transform:translateY(0);}
+12%{transform:translateY(-10%);}
+13%{transform:translateY(0);}
+14%{transform:translateY(-12%);}
+15%{transform:translateY(0);}
+16.66%{transform:translateY(0);}
+100%{transform:translateY(0);}
+}
+@-webkit-keyframes step06_img01{
+0%{-webkit-transform:translateY(0);}
+1%{-webkit-transform:translateY(0);}
+2%{-webkit-transform:translateY(-10%);}
+3%{-webkit-transform:translateY(0);}
+4%{-webkit-transform:translateY(-12%);}
+5%{-webkit-transform:translateY(0);}
+11%{-webkit-transform:translateY(0);}
+12%{-webkit-transform:translateY(-10%);}
+13%{-webkit-transform:translateY(0);}
+14%{-webkit-transform:translateY(-12%);}
+15%{-webkit-transform:translateY(0);}
+16.66%{-webkit-transform:translateY(0);}
+100%{-webkit-transform:translateY(0);}
+}
+.dream_step span.step06_img02{width:31.91%; height:66.1%; top:33.89%; left:-6.38%;}
+.dream_step.fadeInDown span.step06_img02{background:url(../images/dream/step06_img03.png) no-repeat; background-size:100% auto;
+	      animation:step06_img02 24s ease-in-out infinite;
+-webkit-animation:step06_img02 24s ease-in-out infinite;
+				animation-delay:20.5s;
+-webkit-animation-delay:20.5s;}
+@keyframes step06_img02{
+0%{background:url(../images/dream/step06_img03.png) no-repeat; background-size:100% auto;}
+1%{background:url(../images/dream/step06_img02.png) no-repeat; background-size:100% auto;}
+5%{background:url(../images/dream/step06_img02.png) no-repeat; background-size:100% auto;}
+6%{background:url(../images/dream/step06_img03.png) no-repeat; background-size:100% auto;}
+10%{background:url(../images/dream/step06_img03.png) no-repeat; background-size:100% auto;}
+11%{background:url(../images/dream/step06_img02.png) no-repeat; background-size:100% auto;}
+15%{background:url(../images/dream/step06_img02.png) no-repeat; background-size:100% auto;}
+16%{background:url(../images/dream/step06_img03.png) no-repeat; background-size:100% auto;}
+16.66%{background:url(../images/dream/step06_img03.png) no-repeat; background-size:100% auto;}
+100%{background:url(../images/dream/step06_img03.png) no-repeat; background-size:100% auto;}
+}
+@-webkit-keyframes step06_img02{
+0%{background:url(../images/dream/step06_img03.png) no-repeat; background-size:100% auto;}
+1%{background:url(../images/dream/step06_img02.png) no-repeat; background-size:100% auto;}
+5%{background:url(../images/dream/step06_img02.png) no-repeat; background-size:100% auto;}
+6%{background:url(../images/dream/step06_img03.png) no-repeat; background-size:100% auto;}
+10%{background:url(../images/dream/step06_img03.png) no-repeat; background-size:100% auto;}
+11%{background:url(../images/dream/step06_img02.png) no-repeat; background-size:100% auto;}
+15%{background:url(../images/dream/step06_img02.png) no-repeat; background-size:100% auto;}
+16%{background:url(../images/dream/step06_img03.png) no-repeat; background-size:100% auto;}
+16.66%{background:url(../images/dream/step06_img03.png) no-repeat; background-size:100% auto;}
+100%{background:url(../images/dream/step06_img03.png) no-repeat; background-size:100% auto;}
+}
+
